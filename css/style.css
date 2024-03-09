@@ -19,7 +19,6 @@ base style
   }
 }
 
-
 .nav-section {
   width: 5%;
   max-width: 5vw;
@@ -72,10 +71,10 @@ top
 
 .top {
   background-image: url(../images/top_img.png);
-  aspect-ratio: 9 / 5;
+  aspect-ratio: 9 / 5.3;
   color: white;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: relative;
 }
 
@@ -184,7 +183,7 @@ personal-gym
 
 @media screen and (max-width:768px){
   .personal-gym h2 {
-    font-size: 1.5em;
+    font-size: 1.1em;
     position: relative;
     width: 100%;
     text-align: center;
@@ -207,7 +206,7 @@ personal-gym
   .personal-gym h2::before {
     position: absolute;
     content: "PESONAL GYM";
-    top: 36%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2em;
@@ -228,7 +227,7 @@ personal-gym
   .personal-gym p {
     font-size: 0.8em;
     margin-top: 5%;
-    line-height: 2.5em;
+    line-height: 2.8em;
     text-align: center;
   }
 }
@@ -273,9 +272,10 @@ concept
 
 @media screen and (max-width:768px){
   .concept-wrap {
-    height:auto;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20%;
+    padding-bottom: 10%;
   }
 }
 
@@ -314,9 +314,9 @@ concept
 
 @media screen and (max-width:768px){
   .concept p {
-    padding-top: 5%;
+    padding-top: 10%;
     font-size: 0.7em;
-    line-height: 2em;
+    line-height: 3em;
   }
 }
 
@@ -385,7 +385,7 @@ question
 .question h2::before {
   position: absolute;
   content: "QUESTION";
-  top: 19%;
+  top: 16%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4.5em;
@@ -558,8 +558,7 @@ question
     font-size: 1.5em;
     padding-top: 5%;
     padding-bottom: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 1%;
   }
 }
 
@@ -802,6 +801,18 @@ staff
 @media screen and (max-width:768px){
   .br-sp2{
     display:none;
+  }
+}
+
+.staff-txt{
+  width: 60%;
+  align-items:left;
+}
+
+@media screen and (max-width:768px){
+  .staff-txt{
+    width: 100%;
+    align-items:center;
   }
 }
 
@@ -1301,6 +1312,22 @@ strength
   text-align: center;
 }
 
+@media screen and (max-width:768px){
+  .img_override-1 {
+    background-color: #ffffff;
+    border-radius: 15px;
+    font-size: 15px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 0;
+    width: 80%;
+
+}
+
+}
+
 .img_override-1.gr_2 {
   background-color: #95ff4a;
 }
@@ -1356,7 +1383,7 @@ pricerist
     justify-content: space-between;
     padding-top: 3%;
     padding-bottom: 1em;
-    width: 86%;
+    width: 80%;
     margin: 0 auto;
   }
 }
@@ -1391,6 +1418,14 @@ pricerist
 @media screen and (max-width:768px){
   .price-content {
     width: 100%;
+  }
+
+  .price-content:nth-child(2){
+    margin-top: 5%;
+  }
+
+  .price-content:nth-child(3){
+    margin-top: 5%;
   }
 
   .pr-btn .botun-1{
@@ -1490,7 +1525,7 @@ pricerist
 
 @media screen and (max-width:768px){
   .pr-li-1{
-    padding-bottom: 10%;
+    padding-bottom: 15%;
   }
 }
 
@@ -1569,12 +1604,12 @@ pricerist
 
   .price-txt-2 {
     padding-bottom: 5%;
-    padding-top: 1em;
+    padding-top: 3em;
     font-size: 0.5em;
   }
 
   .pr-span{
-    margin-bottom: 1em;
+    margin-bottom: 5%;
   }
 }
 
@@ -1590,9 +1625,25 @@ FAQ
   font-weight: bold;
 }
 
+@media screen and (max-width:768px){
+  .faq {
+    padding-top: 25%;
+    padding-bottom: 20%;
+    position: relative;
+    font-weight: bold;
+  }
+}
+
 .faq h2 {
   text-align: center;
   padding-left: 4%;
+}
+
+@media screen and (max-width:768px){
+  .faq h2 {
+    text-align: center;
+    padding-bottom: 10%;
+  }
 }
 
 .faq h2::before {
@@ -1605,6 +1656,20 @@ FAQ
   white-space: nowrap;
   z-index: -1;
   color: #f5f5f5;
+}
+
+@media screen and (max-width:768px){
+  .faq h2::before {
+    position: absolute;
+    content: "FAQ";
+    top: 17%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5em;
+    white-space: nowrap;
+    z-index: -1;
+    color: #f5f5f5;
+  }
 }
 
 .qa-1 {
@@ -1626,6 +1691,14 @@ FAQ
   padding-left: 20%;
   padding-right: 15%;
 }
+
+@media screen and (max-width:768px){
+  .faq-wrapper {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
 .faq-wrapper summary {
   color: #fff;
   text-align: center;
@@ -1634,6 +1707,7 @@ FAQ
   border-radius: 10px 10px 0 0;
   display: block;
 }
+
 .faq-wrapper summary::-webkit-details-marker {
   display: none;
 }
@@ -1651,6 +1725,15 @@ access
   padding-top: 15%;
   position: relative;
   font-weight: bold;
+}
+
+@media screen and (max-width:768px){
+  .access {
+    padding-top: 15%;
+    padding-bottom: 15%;
+    position: relative;
+    font-weight: bold;
+  }
 }
 
 .access h2 {
@@ -1696,7 +1779,7 @@ access
   .access-wrapper {
     display: flex;
     flex-direction: column;
-    padding-left: 5%;
+    padding-left: 10%;
     padding-right: 10%;
     justify-content: space-between;
     padding-top: 8%;
@@ -1705,6 +1788,13 @@ access
 
 .access-txt {
   padding-left: 5%;
+}
+
+@media screen and (max-width:768px){
+  .access-txt {
+    padding-top: 10%;
+    padding-left: 0%;
+  }
 }
 
 .access-txt dt {
@@ -1721,7 +1811,8 @@ access
 
 @media screen and (max-width:768px){
   .access-map {
-    max-width: 90vw;
+    max-width: 100%;
+    max-height: 20vh;
   }
 }
 
@@ -1755,6 +1846,21 @@ label {
   text-align: center;
 }
 
+@media screen and (max-width:768px){
+  .contact h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30%;
+  }
+
+  .contact h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.6em;
+  }
+}
+
 .contact h3 {
   text-align: center;
   font-weight: bold;
@@ -1776,12 +1882,34 @@ label {
   padding-bottom: 0.2em;
 }
 
+@media screen and (max-width:768px){
+  .rd-cnt-txt-2 {
+    width: 25%;
+    padding-bottom: 0.2em;
+  }
+
+  .rd-cnt-txt-1 {
+    text-align: left;
+    width: 15%;
+  }
+}
+
 .rd-txt-box {
   display: inline-block;
   color: #1f1e1e;
   background-color: #fff;
   padding: 1% 2%;
   font-weight: bold;
+}
+
+@media screen and (max-width:768px){
+  .rd-txt-box {
+    display: inline-block;
+    color: #1f1e1e;
+    background-color: #fff;
+    padding: 0.5% 3%;
+    font-weight: bold;
+  }
 }
 
 .contact p {
@@ -1792,6 +1920,14 @@ label {
   padding-left: 30vw;
   padding-right: 30vw;
   padding-bottom: 8%;
+}
+
+@media screen and (max-width:768px){
+  .contact-form {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 8%;
+  }
 }
 
 .contact h2 {
@@ -1833,15 +1969,30 @@ form {
 
 .submit-btn {
   padding: 2% 30%;
-  display: flex;
   align-items: center;
   font-weight: bold;
   font-size: 1.5em;
 }
 
+@media screen and (max-width:768px){
+  .submit-btn {
+    padding: 2% 42%;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+}
+
 .submit-content {
-  padding-left: 23%;
   padding-top: 5%;
+  text-align: center;
+}
+
+@media screen and (max-width:768px){
+  .submit-content {
+    padding-top: 5%;
+    text-align: center;
+  }
 }
 
 /*
@@ -1896,10 +2047,24 @@ footer
 .footer-wrapper {
   padding-left: 12%;
   padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   display: flex;
   justify-content: space-between;
-  padding: 2%;
 }
+
+@media screen and (max-width:768px){
+  .footer-wrapper {
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+ }
 
 .footer-left {
   display: flex;
@@ -1910,17 +2075,32 @@ footer
   padding-left: 3em;
 }
 
+@media screen and (max-width:768px){
+  .footer-left p {
+    display: none;
+  }
+ }
+
 .footer-list {
   display: flex;
 }
 
+@media screen and (max-width:768px){
+  .footer-list {
+    display: flex;
+    font-size: 0.7em;
+    justify-content: space-between;
+  }
+ }
+
 .footer-list li {
-  padding-right: 3em;
   line-height: 3em;
+  padding-right: 3em;
 }
 
 @media screen and (max-width:768px){
   .footer-list li {
-   padding-right: 0.2em;
+   padding-top: 1em;
+   padding-right: 2em;
   }
  }
