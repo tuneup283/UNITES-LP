@@ -44,6 +44,11 @@ header {
   left: 5%;
 }
 
+header img{
+  width: 67px;
+  height: 83.1px;
+}
+
 @media screen and (max-width:768px){
   .header {
     top: 5%;
@@ -134,7 +139,7 @@ top
     content: "ユナイツ";
     color: #ffffff;
     position: absolute;
-    right: 46%;
+    right: 42%;
     bottom:42%;
     font-size: 0.4em;
     letter-spacing: 0.8em;
@@ -243,7 +248,7 @@ concept
 .concept {
   color: #ffffff;
   aspect-ratio: 24 / 11;
-  background-image: url(../images/con_bg.png);
+  background-image: url(../images/マスクグループ\ 16.png);
   text-align: center;
   font-weight: bold;
   display: grid;
@@ -256,7 +261,7 @@ concept
   .concept {
     color: #ffffff;
     aspect-ratio: 11 / 19;
-    background-image: url(../images/con_bg.png);
+    background-image: url(../images/マスクグループ\ 16.png);
     text-align: center;
     font-weight: bold;
     display: grid;
@@ -293,18 +298,21 @@ concept
   }
 }
 
-.concept h2::before {
-  position: absolute;
-  content: "CONCEPT";
-  bottom: 20%;
-  left: 50%;
-  transform: translate(-50%, -30%);
-  font-size: 2.5em;
-  white-space: nowrap;
-  z-index: 0;
-  color: #f5f5f5;
-  opacity: 0.2;
+@media screen and (max-width:768px){
+  .concept h2::before {
+    position: absolute;
+    content: "CONCEPT";
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 2.5em;
+    white-space: nowrap;
+    z-index: 0;
+    color: #f5f5f5;
+    opacity: 0.2;
+  }
 }
+
 
 .concept p {
   padding-top: 2.5em;
@@ -749,20 +757,51 @@ staff
   }
 }
 
-.staff h3 {
+.st-h3-1{
   font-size: 1.5em;
+  border-bottom: #1f1e1e solid 1px;
+  width: 28%;
+}
+
+.st-h3-2{
+  font-size: 1.5em;
+  border-bottom: #1f1e1e solid 1px;
+  width: 36%;
+}
+
+.st-h3-3{
+  font-size: 1.5em;
+  border-bottom: #1f1e1e solid 1px;
+  width: 29%;
 }
 
 @media screen and (max-width:768px){
-  .staff h3 {
+  .st-h3-1{
     font-size: 1.3em;
+    border-bottom: #1f1e1e solid 1px;
+    width: 42%;
+    padding-top: 10%;
+  }
+  
+  .st-h3-2{
+    font-size: 1.3em;
+    border-bottom: #1f1e1e solid 1px;
+    width: 57%;
+    padding-top: 10%;
+  }
+  
+  .st-h3-3{
+    font-size: 1.3em;
+    border-bottom: #1f1e1e solid 1px;
+    width: 47%;
     padding-top: 10%;
   }
 }
 
 .staff p {
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 2em;
+  padding-top: 1em;
 }
 
 @media screen and (max-width:768px){
@@ -781,6 +820,7 @@ staff
   .staff span {
     color: #a7ff67;
     font-size: 1.1em;
+    padding-top: 1em;
   }
 }
 
@@ -850,24 +890,24 @@ staff
 
 
 .staff-list {
-  padding-top: 3%;
+  padding-top: 2%;
 }
 
 .staff-list ul {
-  padding-top: 3%;
+  padding-top: 1%;
   padding-left: 3%;
 }
 
 @media screen and (max-width:768px){
   .staff-list ul {
-    padding-top: 3%;
+    padding-top: 1%;
     padding-left: 3%;
     font-size: 0.7em;
     font-weight: bolder;
   }
 
   .staff-list li{
-    padding-top: 3%;
+    padding-top: 2%;
   }
 }
 
@@ -881,7 +921,6 @@ staff
   width: 14em;
   display: flex;
   font-size: 1.1em;
-  border-bottom: #1f1e1e solid 1px;
   text-align: center;
 }
 
@@ -889,8 +928,7 @@ staff
   .staff-career {
     width: 100%;
     display: flex;
-    font-size: 1.1em;
-    border-bottom: #1f1e1e solid 1px;
+    font-size: 1.1em;;
     text-align: center;
   }
 }
@@ -904,7 +942,6 @@ staff
   width: 10em;
   display: flex;
   font-size: 1.1em;
-  border-bottom: #1f1e1e solid 1px;
   text-align: center;
 }
 
@@ -912,8 +949,7 @@ staff
   .staff-career-2 {
     width: 100%;
     display: flex;
-    font-size: 1.1em;
-    border-bottom: #1f1e1e solid 1px;
+    font-size: 1.1em;;
     text-align: center;
   }
 }
@@ -958,8 +994,9 @@ our service
 }
 
 .service-wrapper {
-  padding-left: 15%;
-  padding-right: 10%;
+  padding-left: 10%;
+  padding-right: 5%;
+  max-width: 1200px;
 }
 
 @media screen and (max-width:768px){
@@ -1128,10 +1165,10 @@ our service
 
 .sr-bg-1::before {
   position: absolute;
-  content: "COUNCELING";
-  left: 75%;
+  content: "TRAINING";
+  left: 68%;
   transform: translate(-50%, -50%);
-  font-size: 2.5em;
+  font-size: 2em;
   white-space: nowrap;
   z-index: -1;
   color: #f5f5f5;
@@ -1140,10 +1177,10 @@ our service
 @media screen and (max-width:768px){
   .sr-bg-1::before {
     position: absolute;
-    content: "COUNCELING";
-    left: 45%;
+    content: "TRAINING";
+    left: 30%;
     transform: translate(-50%, -50%);
-    font-size: 2em;
+    font-size: 1.5em;
     white-space: nowrap;
     z-index: -1;
     color: #f5f5f5;
@@ -1152,10 +1189,10 @@ our service
 
 .sr-bg-2::before {
   position: absolute;
-  content: "TRAINING";
-  left: 26%;
+  content: "STRETCH";
+  left: 19%;
   transform: translate(-50%, -50%);
-  font-size: 2.5em;
+  font-size: 2em;
   white-space: nowrap;
   z-index: -1;
   color: #f5f5f5;
@@ -1164,10 +1201,10 @@ our service
 @media screen and (max-width:768px){
   .sr-bg-2::before {
     position: absolute;
-    content: "TRAINING";
-    left: 35%;
+    content: "STRETCH";
+    left: 30%;
     transform: translate(-50%, -50%);
-    font-size: 2em;
+    font-size: 1.5em;
     white-space: nowrap;
     z-index: -1;
     color: #f5f5f5;
@@ -1176,10 +1213,10 @@ our service
 
 .sr-bg-3::before {
   position: absolute;
-  content: "STRECTH";
-  left: 70%;
+  content: "MEAL GUIDANCE";
+  left: 75%;
   transform: translate(-50%, -50%);
-  font-size: 2.5em;
+  font-size: 2em;
   white-space: nowrap;
   z-index: -1;
   color: #f5f5f5;
@@ -1188,10 +1225,10 @@ our service
 @media screen and (max-width:768px){
   .sr-bg-3::before {
     position: absolute;
-    content: "STRECTH";
-    left: 35%;
+    content: "MEAL GUIDANCE";
+    left: 43%;
     transform: translate(-50%, -50%);
-    font-size: 2em;
+    font-size: 1.5em;
     white-space: nowrap;
     z-index: -1;
     color: #f5f5f5;
@@ -1201,7 +1238,7 @@ our service
 .sr-bg-4::before {
   position: absolute;
   content: "OPTION";
-  left: 24%;
+  left: 19%;
   transform: translate(-50%, -50%);
   font-size: 2.5em;
   white-space: nowrap;
@@ -1213,9 +1250,9 @@ our service
   .sr-bg-4::before {
     position: absolute;
     content: "OPTION";
-    left: 32%;
+    left: 28%;
     transform: translate(-50%, -50%);
-    font-size: 2em;
+    font-size: 1.5em;
     white-space: nowrap;
     z-index: -1;
     color: #f5f5f5;
@@ -1351,7 +1388,7 @@ strength
 
 .st-txt {
   padding-top: 5%;
-  width: 95%;
+  width: 100%;
 }
 
 
@@ -1371,7 +1408,7 @@ pricerist
   display: flex;
   justify-content: space-between;
   padding-top: 3%;
-  padding-bottom: 1em;
+  padding-bottom: 3em;
   width: 70%;
   margin: 0 auto;
 }
@@ -1575,6 +1612,7 @@ pricerist
 .price-txt-2 {
   padding-bottom: 5%;
   padding-top: 1em;
+  font-size: 0.8em;
 }
 
 .price-txt-2 span {
@@ -1600,6 +1638,12 @@ pricerist
     color: #95ff4a;
     padding-top: 3%;
     font-size: 0.5em;
+  }
+
+  .price-txt-1 {
+    font-size: 9px;
+    font-weight: normal;
+    padding-bottom: 3%;
   }
 
   .price-txt-2 {
@@ -1798,7 +1842,11 @@ access
 }
 
 .access-txt dt {
-  padding: 2em 0 0.5em 0;
+  padding: 3em 0 0.5em 0;
+}
+
+.access-txt p{
+  font-size: 0.8em;
 }
 
 .access dl{
@@ -1898,7 +1946,7 @@ label {
   display: inline-block;
   color: #1f1e1e;
   background-color: #fff;
-  padding: 1% 2%;
+  padding: 0.5% 5%;
   font-weight: bold;
 }
 
@@ -2008,16 +2056,18 @@ nav
 }
 
 .nav-section img {
-  padding-top: 3em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .nav-section ul {
-  padding-left: 1.8em;
+  padding-left: 1.5em;
   list-style: none;
+  padding-bottom: 10%;
 }
 
 .nav-wrapper {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   padding-top: 35vh;
@@ -2027,6 +2077,19 @@ nav
  .nav-section{
   flex: none;
  }
+}
+
+.nav-box{
+  background-color: #1f1e1e;
+  text-align: center;
+}
+
+.nav-box a{
+  color: #ffffff;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  line-height: 5vw;
+  padding:67% 0;
 }
 
 
@@ -2045,7 +2108,7 @@ footer
 }
 
 .footer-wrapper {
-  padding-left: 12%;
+  padding-left: 5%;
   padding-right: 5%;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -2071,8 +2134,9 @@ footer
 }
 
 .footer-left p {
-  line-height: 3em;
-  padding-left: 3em;
+  line-height: 3.2em;
+  padding-left: 1em;
+  font-size: 0.8em;
 }
 
 @media screen and (max-width:768px){
@@ -2083,6 +2147,7 @@ footer
 
 .footer-list {
   display: flex;
+  font-size: 0.8em;
 }
 
 @media screen and (max-width:768px){
@@ -2095,7 +2160,7 @@ footer
 
 .footer-list li {
   line-height: 3em;
-  padding-right: 3em;
+  padding-right: 2em;
 }
 
 @media screen and (max-width:768px){
