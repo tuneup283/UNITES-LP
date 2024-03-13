@@ -6,6 +6,7 @@ base style
 
 .html {
   font-family: 游ゴシック;
+  position: relative;
 }
 .main-section {
   width: 95%;
@@ -26,15 +27,14 @@ base style
   right: 0.5%;
 }
 
-@media screen and (max-width:768px){
-  .nav-section {
-    display: none;
-  }
-}
-
-
 main {
   display: flex;
+}
+
+@media screen and (max-width:768px){
+  .main {
+    display:block;
+  }
 }
 
 header {
@@ -86,7 +86,7 @@ top
 @media screen and (max-width:768px){
   .top {
     background-image: url(../images/top_img.png);
-    aspect-ratio: 5 / 9;
+    aspect-ratio: 5 / 11;
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
@@ -996,7 +996,6 @@ our service
 .service-wrapper {
   padding-left: 10%;
   padding-right: 5%;
-  max-width: 1200px;
 }
 
 @media screen and (max-width:768px){
@@ -1346,6 +1345,7 @@ strength
   transform: translateX(-50%);
   padding: 5px 0;
   width: 80%;
+  max-width: 400px;
   text-align: center;
 }
 
@@ -2074,8 +2074,17 @@ nav
 }
 
 @media screen and (max-width:768px){
+  .nav-wrapper {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 35vh;
+  }
+ }
+
+@media screen and (max-width:768px){
  .nav-section{
-  flex: none;
+  display: none;
  }
 }
 
