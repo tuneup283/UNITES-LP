@@ -6,8 +6,14 @@ base style
 
 .html {
   font-family: 游ゴシック;
-  position: relative;
 }
+
+@media screen and (max-width:768px){
+  .body{
+    position: relative;
+  }
+}
+
 .main-section {
   width: 95%;
   max-width: 95%;
@@ -26,6 +32,16 @@ base style
   position: fixed;
   right: 0.5%;
 }
+
+@media screen and (max-width:768px){
+  .nav-section{
+   position: sticky;
+   bottom: 0;
+   width: 100%;
+   background-color: #f5f5f5;
+   color: #ffffff;
+  }
+ }
 
 main {
   display: flex;
@@ -2075,18 +2091,13 @@ nav
 
 @media screen and (max-width:768px){
   .nav-wrapper {
-    height: 20vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     padding-top: 35vh;
   }
  }
 
-@media screen and (max-width:768px){
- .nav-section{
-  display: none;
- }
-}
 
 .nav-box{
   background-color: #1f1e1e;
