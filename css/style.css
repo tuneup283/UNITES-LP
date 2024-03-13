@@ -28,18 +28,14 @@ base style
 
 .nav-section {
   width: 5%;
-  max-width: 5vw;
+  max-width: 5%;
   position: fixed;
-  right: 0.5%;
+  right: 0%;
 }
 
 @media screen and (max-width:768px){
   .nav-section{
-   position: sticky;
-   bottom: 0;
-   width: 100%;
-   background-color: #f5f5f5;
-   color: #ffffff;
+   display: none;
   }
  }
 
@@ -92,8 +88,8 @@ top
 
 .top {
   background-image: url(../images/top_img.png);
-  aspect-ratio: 9 / 5.3;
-  color: white;
+  aspect-ratio: 9 / 5.15;
+  color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -103,7 +99,7 @@ top
   .top {
     background-image: url(../images/top_img.png);
     aspect-ratio: 5 / 11;
-    color: white;
+    color: #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -127,14 +123,14 @@ top
 
 .top h1 {
   font-weight: bold;
-  font-size: 3em;
+  font-size: 3.3em;
   position: relative;
 }
 
 @media screen and (max-width:768px){
   .top h1 {
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.8em;
     position: relative;
     padding-right: 30%;
   }
@@ -171,7 +167,7 @@ top
 @media screen and (max-width:768px){
   .top p {
     font-weight: bold;
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 }
 
@@ -180,7 +176,7 @@ personal-gym
 */
 
 .personal-wrapper {
-  padding: 10% 5%;
+  padding: 20% 5% 10% 5%;
 }
 
 @media screen and (max-width:768px){
@@ -214,7 +210,6 @@ personal-gym
 .personal-gym h2::before {
   position: absolute;
   content: "PESONAL GYM";
-  top: 36%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4em;
@@ -254,7 +249,7 @@ personal-gym
 }
 
 .personal-span {
-  border-bottom: solid #95ff4a 1px;
+  border-bottom: solid #95ff4a 1.5px;
 }
 
 /*
@@ -284,6 +279,7 @@ concept
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-top: 50%;
   }
 }
 
@@ -295,7 +291,6 @@ concept
   .concept-wrap {
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 20%;
     padding-bottom: 10%;
   }
 }
@@ -332,7 +327,7 @@ concept
 
 .concept p {
   padding-top: 2.5em;
-  font-size: 0.8em;
+  font-size: 0.9em;
   line-height: 2.5em;
 }
 
@@ -386,10 +381,16 @@ question
   position: relative;
 }
 
+.question img{
+  object-fit: cover;
+}
+
 .question-wrapper {
   padding-right: 5%;
   padding-left: 10%;
   justify-content: space-between;
+  max-width: 1440px;
+  margin:auto;
 }
 
 .question h2 {
@@ -469,7 +470,7 @@ question
 
 .question-1 {
   display: flex;
-  padding-top: 12%;
+  padding-top: 10%;
   justify-content: space-between;
 }
 
@@ -484,7 +485,7 @@ question
 
 .question-2 {
   display: flex;
-  padding-top: 12%;
+  padding-top: 10%;
   justify-content: space-between;
 }
 
@@ -499,11 +500,26 @@ question
 
 .qs1-txt{
   padding-bottom: 10%;
+  width: 50%;
 }
 
 .qs2-txt{
   padding-top: 3%;
   padding-bottom: 10%;
+  width: 47%;
+}
+
+@media screen and (max-width:768px){
+  .qs1-txt{
+    padding-bottom: 10%;
+    width: 100%;
+  }
+  
+  .qs2-txt{
+    padding-top: 3%;
+    padding-bottom: 10%;
+    width: 100%;
+  }
 }
 
 .question span {
@@ -647,8 +663,7 @@ facility
   font-weight: bold;
   color: #1f1e1e;
   text-align: center;
-  padding-top: 13%;
-  position: relative;
+  padding-top: 24%;
 }
 
 
@@ -658,6 +673,7 @@ facility
   font-size: 1.5em;
   line-height: 2em;
   padding-bottom: 8%;
+  position: relative;
 }
 
 @media screen and (max-width:768px){
@@ -672,7 +688,6 @@ facility
 .facility h2::before {
   position: absolute;
   content: "FACILITY";
-  top: 16%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4.5em;
@@ -699,6 +714,8 @@ facility
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  max-width: 1440px;
+  margin: auto;
 }
 .facility-img img {
   width: calc(100% / 3);
@@ -717,8 +734,8 @@ staff
 .staff {
   color: #1f1e1e;
   font-weight: bold;
-  padding-top: 20%;
-  padding-bottom: 10%;
+  padding-top: 15%;
+  padding-bottom: 8%;
   position: relative;
 }
 
@@ -733,7 +750,7 @@ staff
 }
 
 .staff h2 {
-  font-size: 1.5em;
+  font-size: 1.6em;
   padding-bottom: 10%;
   text-align: center;
 }
@@ -750,7 +767,7 @@ staff
 .staff h2::before {
   position: absolute;
   content: "UNITES STAFF";
-  top: 13%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4.5em;
@@ -772,6 +789,7 @@ staff
     color: #f5f5f5;
   }
 }
+
 
 .st-h3-1{
   font-size: 1.5em;
@@ -815,7 +833,7 @@ staff
 }
 
 .staff p {
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 2em;
   padding-top: 1em;
 }
@@ -829,7 +847,7 @@ staff
 
 .staff span {
   color: #a7ff67;
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 
 @media screen and (max-width:768px){
@@ -884,7 +902,9 @@ staff
   justify-content: space-between;
   padding-left: 12%;
   padding-right: 7%;
-  padding-bottom: 8%;
+  padding-bottom: 7%;
+  max-width: 1440px;
+  margin: auto;
 }
 
 @media screen and (max-width:768px){
@@ -892,8 +912,8 @@ staff
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 10%;
+    padding-right: 5%;
     padding-bottom: 8%;
   }
  }
@@ -1004,9 +1024,8 @@ our service
 
 .service {
   padding-top: 8%;
-  padding-bottom: 8%;
+  padding-bottom: 10%;
   font-weight: bold;
-  position: relative;
 }
 
 .service-wrapper {
@@ -1051,7 +1070,7 @@ our service
   display: flex;
   justify-content: space-between;
   padding-top: 10%;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -1071,7 +1090,7 @@ our service
   padding-top: 10%;
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -1092,6 +1111,7 @@ our service
   padding-top: 5%;
   margin-bottom: 3%;
   padding-right: 8%;
+  padding-left: 10%;
   width: 50%;
 }
 
@@ -1158,10 +1178,12 @@ our service
 
 .service-cnt h3 {
   font-size: 1.5rem;
+  position: relative;
 }
 
 .service-cnt-1 h3 {
   font-size: 1.5rem;
+  position: relative;
 }
 
 @media screen and (max-width:768px){
@@ -1181,7 +1203,7 @@ our service
 .sr-bg-1::before {
   position: absolute;
   content: "TRAINING";
-  left: 68%;
+  left: 25%;
   transform: translate(-50%, -50%);
   font-size: 2em;
   white-space: nowrap;
@@ -1189,11 +1211,15 @@ our service
   color: #f5f5f5;
 }
 
+.sr-bg-1{
+  position: relative;
+}
+
 @media screen and (max-width:768px){
   .sr-bg-1::before {
     position: absolute;
     content: "TRAINING";
-    left: 30%;
+    left: 24%;
     transform: translate(-50%, -50%);
     font-size: 1.5em;
     white-space: nowrap;
@@ -1202,10 +1228,14 @@ our service
   }
 }
 
+.sr-bg-2{
+  position: relative;
+}
+
 .sr-bg-2::before {
   position: absolute;
   content: "STRETCH";
-  left: 19%;
+  left: 28%;
   transform: translate(-50%, -50%);
   font-size: 2em;
   white-space: nowrap;
@@ -1226,10 +1256,14 @@ our service
   }
 }
 
+.sr-bg-3{
+  position: relative;
+}
+
 .sr-bg-3::before {
   position: absolute;
   content: "MEAL GUIDANCE";
-  left: 75%;
+  left: 39%;
   transform: translate(-50%, -50%);
   font-size: 2em;
   white-space: nowrap;
@@ -1241,7 +1275,7 @@ our service
   .sr-bg-3::before {
     position: absolute;
     content: "MEAL GUIDANCE";
-    left: 43%;
+    left: 40%;
     transform: translate(-50%, -50%);
     font-size: 1.5em;
     white-space: nowrap;
@@ -1250,10 +1284,14 @@ our service
   }
 }
 
+.sr-bg-4{
+  position: relative;
+}
+
 .sr-bg-4::before {
   position: absolute;
   content: "OPTION";
-  left: 19%;
+  left: 28%;
   transform: translate(-50%, -50%);
   font-size: 2.5em;
   white-space: nowrap;
@@ -1286,13 +1324,18 @@ strength
 */
 
 .our-strength {
-  padding-top: 8%;
+  padding-top: 9.5%;
   font-weight: bold;
-  padding-bottom: 8%;
+  padding-bottom: 9%;
+  padding-left: 10%;
+  padding-right: 5%;
+  max-width: 1440px;
+  margin:auto;
 }
 
 .strength-title {
   text-align: center;
+  
 }
 
 .strength-title h2 {
@@ -1318,8 +1361,6 @@ strength
 
 .strength-wrapper {
   display: flex;
-  padding-left: 10%;
-  padding-right: 5%;
   justify-content: space-between;
 }
 
@@ -1336,7 +1377,7 @@ strength
 
 .st-txt p{
   line-height: 2em;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 @media screen and (max-width:768px){
@@ -1417,15 +1458,17 @@ pricerist
   background-color: #1f1e1e;
   color: #ffffff;
   font-weight: bold;
-  padding-top: 8%;
+  padding-top: 9%;
+  padding-bottom: 10%;
 }
 
 .price-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 3%;
+  padding-top: 4.5%;
   padding-bottom: 3em;
   width: 70%;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -1435,7 +1478,7 @@ pricerist
     flex-direction: column;
     justify-content: space-between;
     padding-top: 3%;
-    padding-bottom: 1em;
+    padding-bottom: 5%;
     width: 80%;
     margin: 0 auto;
   }
@@ -1663,7 +1706,7 @@ pricerist
   }
 
   .price-txt-2 {
-    padding-bottom: 5%;
+    padding-bottom: 40%;
     padding-top: 3em;
     font-size: 0.5em;
   }
@@ -1680,7 +1723,7 @@ FAQ
 */
 
 .faq {
-  padding-top: 13%;
+  padding-top: 23%;
   position: relative;
   font-weight: bold;
 }
@@ -1709,7 +1752,7 @@ FAQ
 .faq h2::before {
   position: absolute;
   content: "FAQ";
-  top: 22%;
+  top: 33%;
   left: 53%;
   transform: translate(-50%, -50%);
   font-size: 5em;
@@ -1750,6 +1793,8 @@ FAQ
 .faq-wrapper {
   padding-left: 20%;
   padding-right: 15%;
+  max-width: 1440px;
+  margin: auto;
 }
 
 @media screen and (max-width:768px){
@@ -1782,7 +1827,7 @@ access
 */
 
 .access {
-  padding-top: 15%;
+  padding-top: 15.3%;
   position: relative;
   font-weight: bold;
 }
@@ -1791,7 +1836,6 @@ access
   .access {
     padding-top: 15%;
     padding-bottom: 15%;
-    position: relative;
     font-weight: bold;
   }
 }
@@ -1799,12 +1843,19 @@ access
 .access h2 {
   text-align: center;
   font-size: 26px;
+  padding-left: 15%;
+  padding-right: 10%;
+  position: relative;
+}
+
+.access h3{
+  font-size: 0.95em;
 }
 
 .access h2::before {
   position: absolute;
   content: "ACCESS";
-  top: 23%;
+  top: 15%;
   left: 51%;
   transform: translate(-50%, -50%);
   font-size: 5em;
@@ -1833,6 +1884,8 @@ access
   padding-right: 10%;
   justify-content: space-between;
   padding-top: 8%;
+  max-width: 1440px;
+  margin: auto;
 }
 
 @media screen and (max-width:768px){
@@ -1848,6 +1901,7 @@ access
 
 .access-txt {
   padding-left: 5%;
+  padding-top: 2.5%;
 }
 
 @media screen and (max-width:768px){
@@ -1858,7 +1912,8 @@ access
 }
 
 .access-txt dt {
-  padding: 3em 0 0.5em 0;
+  padding: 1.5em 0 0.5em 0;
+  font-size: 0.8em;
 }
 
 .access-txt p{
@@ -1885,9 +1940,10 @@ contact
 */
 
 .contact {
-  margin-top: 10%;
+  margin-top: 11%;
   color: #ffffff;
   background-color: #1f1e1e;
+  padding-top: 3%;
 }
 
 input[type="text"] {
@@ -2066,7 +2122,7 @@ nav
 .nav-section p {
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  line-height: 4.5vw;
+  line-height: 5vw;
   font-weight: bold;
   font-size: 0.6em;
 }
@@ -2077,7 +2133,7 @@ nav
 }
 
 .nav-section ul {
-  padding-left: 1.5em;
+  padding-left: 32%;
   list-style: none;
   padding-bottom: 10%;
 }
@@ -2086,7 +2142,7 @@ nav
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-top: 35vh;
+  padding-top: 26vh;
 }
 
 @media screen and (max-width:768px){
