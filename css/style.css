@@ -31,6 +31,7 @@ base style
   max-width: 5%;
   position: fixed;
   right: 0%;
+  bottom: 0;
 }
 
 @media screen and (max-width:768px){
@@ -38,6 +39,8 @@ base style
    display: none;
   }
  }
+
+
 
 main {
   display: flex;
@@ -88,7 +91,7 @@ top
 
 .top {
   background-image: url(../images/top_img.png);
-  aspect-ratio: 9 / 5.15;
+  aspect-ratio: 9 / 5.3;
   color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -151,7 +154,7 @@ top
     content: "ユナイツ";
     color: #ffffff;
     position: absolute;
-    right: 42%;
+    right: 46%;
     bottom:42%;
     font-size: 0.4em;
     letter-spacing: 0.8em;
@@ -181,14 +184,13 @@ personal-gym
 
 @media screen and (max-width:768px){
   .personal-wrapper {
-    padding: 40% 10%;
+    padding: 40% 10% 30% 10%;
   }
 }
 
 .personal-gym {
   color: #1f1e1e;
   font-weight: bold;
-  position: relative;
 }
 
 .personal-gym h2 {
@@ -200,7 +202,7 @@ personal-gym
 
 @media screen and (max-width:768px){
   .personal-gym h2 {
-    font-size: 1.1em;
+    font-size: 1em;
     position: relative;
     width: 100%;
     text-align: center;
@@ -211,6 +213,7 @@ personal-gym
   position: absolute;
   content: "PESONAL GYM";
   left: 50%;
+  top: -10%;
   transform: translate(-50%, -50%);
   font-size: 4em;
   white-space: nowrap;
@@ -222,7 +225,7 @@ personal-gym
   .personal-gym h2::before {
     position: absolute;
     content: "PESONAL GYM";
-    top: 10%;
+    top: 2%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2em;
@@ -278,7 +281,7 @@ concept
     display: grid;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 75% ;
     padding-top: 50%;
   }
 }
@@ -334,7 +337,7 @@ concept
 @media screen and (max-width:768px){
   .concept p {
     padding-top: 10%;
-    font-size: 0.7em;
+    font-size: 0.8em;
     line-height: 3em;
   }
 }
@@ -378,11 +381,16 @@ question
 .question {
   font-weight: bold;
   color: #1f1e1e;
-  position: relative;
 }
 
 .question img{
   object-fit: cover;
+}
+
+@media screen and (max-width:768px){
+ .qs-img{
+  margin-right: calc(50%-50vw);
+ }
 }
 
 .question-wrapper {
@@ -395,22 +403,25 @@ question
 
 .question h2 {
   padding-top: 25%;
+  padding-bottom: 10%;
   font-size: 1.8em;
   text-align: center;
+  position: relative;
 }
 
 @media screen and (max-width:768px){
   .question h2 {
-    padding-top: 25%;
-    font-size: 1.2em;
+    padding-top: 20%;
+    font-size: 1em;
     text-align: center;
+    position: relative;
   }
 }
 
 .question h2::before {
   position: absolute;
   content: "QUESTION";
-  top: 16%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4.5em;
@@ -423,7 +434,7 @@ question
   .question h2::before {
     position: absolute;
     content: "QUESTION";
-    top: 7%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2.3em;
@@ -463,7 +474,7 @@ question
 
 @media screen and (max-width:768px){
   .question ul {
-    padding-top: 4%;
+    padding-top: 6%;
     padding-left: 3%;
   }
 }
@@ -478,7 +489,7 @@ question
   .question-1 {
     display: flex;
     flex-direction: column;
-    padding-top: 12%;
+    padding-top:9%;
     justify-content: space-between;
   }
 }
@@ -493,7 +504,7 @@ question
   .question-2 {
     display: flex;
     flex-direction: column-reverse;
-    padding-top: 12%;
+    padding-top: 9%;
     justify-content: space-between;
   }
 }
@@ -530,6 +541,17 @@ question
   padding-bottom: 3%;
 }
 
+@media screen and (max-width:768px){
+  .question span {
+    display: inline-block;
+    color: #95ff4a;
+    font-size: 2.5em;
+    line-height: auto;
+    padding-bottom: 6%;
+  }
+}
+
+
 /*
 コンタクトバナー
 */
@@ -554,9 +576,9 @@ question
     color: #ffffff;
     font-weight: normal;
     text-align: center;
-    margin-top: 30%;
+    margin-top: 28%;
     background-position: center;
-    padding-bottom: 10%;
+    padding-bottom: 9%;
     margin-bottom: 10%;
   }
 }
@@ -569,7 +591,7 @@ question
 @media screen and (max-width:768px){
   .banner h2 {
     font-size: 1.2em;
-    padding-top: 15%;
+    padding-top: 14%;
   }
 }
 
@@ -580,7 +602,7 @@ question
 
 @media screen and (max-width:768px){
   .banner p {
-    font-size: 0.8em;
+    font-size: 0.7em;
     line-height: 1em;
     padding-top: 2%;
   }
@@ -595,9 +617,9 @@ question
 @media screen and (max-width:768px){
   .contact-btn {
     font-weight:bolder;
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
     padding-left: 1%;
   }
 }
@@ -611,6 +633,31 @@ question
   color: #ffffff;
   border: #ffffff solid 1px;
   padding: 0.5em 3em;
+}
+
+@media screen and (max-width:768px){
+  .botun-1 {
+    color: #ffffff;
+    border: #ffffff solid 1px;
+    padding: 0.6em 3.8em;
+  }
+}
+
+@media screen and (max-width:768px){
+  .btn2-wrap a {
+    border: solid 1px #ffffff;
+    background-color: #ffffff;
+    padding: 0.6em 3.61em;
+  }
+}
+
+@media screen and (max-width:768px){
+  .contact-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2%;
+  }
 }
 
 .btn-1-span {
@@ -664,6 +711,15 @@ facility
   color: #1f1e1e;
   text-align: center;
   padding-top: 24%;
+}
+
+@media screen and (max-width:768px){
+  .facility {
+    font-weight: bold;
+    color: #1f1e1e;
+    text-align: center;
+    padding-top: 28%;
+  }
 }
 
 
@@ -736,16 +792,14 @@ staff
   font-weight: bold;
   padding-top: 15%;
   padding-bottom: 8%;
-  position: relative;
 }
 
 @media screen and (max-width:768px){
   .staff {
     color: #1f1e1e;
     font-weight: bold;
-    padding-top: 25%;
-    padding-bottom: 10%;
-    position: relative;
+    padding-top: 38%;
+    padding-bottom: 15%;
   }
 }
 
@@ -753,13 +807,15 @@ staff
   font-size: 1.6em;
   padding-bottom: 10%;
   text-align: center;
+  position: relative;
 }
 
 @media screen and (max-width:768px){
   .staff h2 {
-    font-size: 1.2em;
-    padding-bottom: 10%;
+    font-size: 1em;
+    padding-bottom: 13.5%;
     text-align: center;
+    position: relative;
   }
   
 }
@@ -780,7 +836,7 @@ staff
   .staff h2::before {
     position: absolute;
     content: "UNITES STAFF";
-    top: 13%;
+    top: 0%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2em;
@@ -792,43 +848,46 @@ staff
 
 
 .st-h3-1{
-  font-size: 1.5em;
+  font-size: 1.45em;
   border-bottom: #1f1e1e solid 1px;
-  width: 28%;
+  width: 27%;
+  padding-bottom: 2%;
 }
 
 .st-h3-2{
-  font-size: 1.5em;
+  font-size: 1.45em;
   border-bottom: #1f1e1e solid 1px;
   width: 36%;
+  padding-bottom: 2%;
 }
 
 .st-h3-3{
-  font-size: 1.5em;
+  font-size: 1.45em;
   border-bottom: #1f1e1e solid 1px;
   width: 29%;
+  padding-bottom: 2%;
 }
 
 @media screen and (max-width:768px){
   .st-h3-1{
-    font-size: 1.3em;
+    font-size: 1.1em;
     border-bottom: #1f1e1e solid 1px;
     width: 42%;
-    padding-top: 10%;
+    padding-top: 14%;
   }
   
   .st-h3-2{
-    font-size: 1.3em;
+    font-size: 1.1em;
     border-bottom: #1f1e1e solid 1px;
     width: 57%;
-    padding-top: 10%;
+    padding-top: 14%;
   }
   
   .st-h3-3{
-    font-size: 1.3em;
+    font-size: 1.1em;
     border-bottom: #1f1e1e solid 1px;
     width: 47%;
-    padding-top: 10%;
+    padding-top: 14%;
   }
 }
 
@@ -846,13 +905,13 @@ staff
 }
 
 .staff span {
-  color: #a7ff67;
+  color: #31d01c;
   font-size: 0.9em;
 }
 
 @media screen and (max-width:768px){
   .staff span {
-    color: #a7ff67;
+    color: #31d01c;
     font-size: 1.1em;
     padding-top: 1em;
   }
@@ -892,9 +951,8 @@ staff
 
 .staff-txt h3 span {
   color: #1f1e1e;
-  font-size: 0.6em;
+  font-size: 0.58em;
   font-weight: bold;
-  padding-left: 1%;
 }
 
 .staff-1 {
@@ -912,15 +970,16 @@ staff
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 10%;
-    padding-right: 5%;
-    padding-bottom: 8%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 14%;
   }
  }
 
  @media screen and (max-width:768px){
-  .staff-1 img{
-    aspect-ratio: 1/1;
+  .st-img{
+    width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -938,7 +997,7 @@ staff
   .staff-list ul {
     padding-top: 1%;
     padding-left: 3%;
-    font-size: 0.7em;
+    font-size: 0.9em;
     font-weight: bolder;
   }
 
@@ -987,6 +1046,7 @@ staff
     display: flex;
     font-size: 1.1em;;
     text-align: center;
+    padding-top: 6%;
   }
 }
 
@@ -1018,6 +1078,22 @@ staff
   padding: 0 0.3em;
 }
 
+@media screen and (max-width:768px){
+  .staff-career-2 p span {
+    color: #1f1e1e;
+    font-weight: bold;
+    font-size: 2.2em;
+    padding: 0 0.3em;
+  }
+
+  .staff-career p span {
+    color: #1f1e1e;
+    font-weight: bold;
+    font-size: 2.2em;
+    padding: 10% 0.3em 0;
+  }
+}
+
 /*
 our service
 */
@@ -1038,6 +1114,12 @@ our service
     padding-left: 7%;
     padding-right: 7%;
   }
+
+  .service {
+    padding-top: 8%;
+    padding-bottom: 15%;
+    font-weight: bold;
+  }
 }
 
 .service h2 {
@@ -1052,6 +1134,11 @@ our service
     font-size: 2em;
     color: #95ff4a;
   }
+
+  .service-title-p {
+    font-size: 0.7em;
+  }
+
 }
 
 .service-title-p {
@@ -1122,6 +1209,7 @@ our service
     margin-bottom: 3%;
     padding-left: 8%;
     width: 100%;
+    display: contents;
   }
  }
 
@@ -1140,6 +1228,7 @@ our service
     margin-bottom: 3%;
     padding-left: 8%;
     width: 100%;
+    display: contents;
   }
 }
 
@@ -1189,10 +1278,20 @@ our service
 @media screen and (max-width:768px){
   .service-cnt h3 {
     font-size: 1.2rem;
+    order: 1;
   }
   
   .service-cnt-1 h3 {
     font-size: 1.2rem;
+    order: 1;
+  }
+
+  .service-cnt img{
+    order: 2;
+  }
+
+  .service-cnt-1 img{
+    order: 2;
   }
 }
 
@@ -1263,7 +1362,7 @@ our service
 .sr-bg-3::before {
   position: absolute;
   content: "MEAL GUIDANCE";
-  left: 39%;
+  left: 42%;
   transform: translate(-50%, -50%);
   font-size: 2em;
   white-space: nowrap;
@@ -1333,6 +1432,16 @@ strength
   margin:auto;
 }
 
+@media screen and (max-width:768px){
+  .our-strength {
+    padding-top: 9.5%;
+    font-weight: bold;
+    padding-bottom: 9%;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+
 .strength-title {
   text-align: center;
   
@@ -1350,7 +1459,7 @@ strength
   }
 
   .strength-title p {
-    font-size: 0.3em;
+    font-size: 0.1em;
   }
 
 }
@@ -1368,9 +1477,10 @@ strength
   .strength-wrapper {
     display: flex;
     flex-direction: column;
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 2%;
+    padding-right: 2%;
     justify-content: space-between;
+    padding-top: 10%;
   }
 }
 
@@ -1383,7 +1493,9 @@ strength
 @media screen and (max-width:768px){
   .st-txt p{
     line-height: 2.2em;
-    font-size: 0.9em;
+    font-size: 0.8em;
+    padding-top: 2.5%;
+    padding-bottom: 12%;
   }
 }
 
@@ -1479,8 +1591,13 @@ pricerist
     justify-content: space-between;
     padding-top: 3%;
     padding-bottom: 5%;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+  }
+
+  .price-list{
+    padding-left: 8%;
+    padding-right: 8%;
   }
 }
 
@@ -1496,15 +1613,6 @@ pricerist
   display: flex;
   justify-content: center;
   gap: 2%;
-}
-
-@media screen and (max-width:768px){
-  .contact-btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2%;
-  }
 }
 
 .price-content {
@@ -1565,8 +1673,8 @@ pricerist
 @media screen and (max-width:768px){
   .price-title {
     text-align: center;
-    padding-bottom: 10%;
-    padding-top: 10%;
+    padding-bottom: 9%;
+    padding-top: 12%;
   }
 
   .price-title h2 {
@@ -1574,8 +1682,36 @@ pricerist
   }
   
   .price-title p {
-    font-size: 0.5em;
+    font-size: 0.8em;
   }
+}
+
+@media screen and (max-width:768px){
+  .price-list p {
+    text-align: center;
+  }
+
+  .first-box p {
+    font-size: 1em;
+    line-height: 40px;
+  }
+
+  .second-txt {
+    text-align: center;
+    padding: 1em 0;
+  }
+
+  .second-txt p{
+    font-size: 0.9em;
+  }
+
+  .second-box span{
+    font-size: 2em;
+  }
+}
+
+.second-txt span{
+  font-size: 3em;
 }
 
 .price-list dl {
@@ -1688,19 +1824,17 @@ pricerist
 
 @media screen and (max-width:768px){
   .pr-under{
-    padding-right: 5%;
-    padding-left: 5%;
     padding-bottom: 15%
   }
 
   .price-txt-g {
     color: #95ff4a;
     padding-top: 3%;
-    font-size: 0.5em;
+    font-size: 0.3em;
   }
 
-  .price-txt-1 {
-    font-size: 9px;
+  .price-txt-1 p {
+    font-size: 0.5em;
     font-weight: normal;
     padding-bottom: 3%;
   }
@@ -1724,7 +1858,6 @@ FAQ
 
 .faq {
   padding-top: 23%;
-  position: relative;
   font-weight: bold;
 }
 
@@ -1740,6 +1873,7 @@ FAQ
 .faq h2 {
   text-align: center;
   padding-left: 4%;
+  position: relative;
 }
 
 @media screen and (max-width:768px){
@@ -1752,7 +1886,7 @@ FAQ
 .faq h2::before {
   position: absolute;
   content: "FAQ";
-  top: 33%;
+  top: -30%;
   left: 53%;
   transform: translate(-50%, -50%);
   font-size: 5em;
@@ -1765,7 +1899,7 @@ FAQ
   .faq h2::before {
     position: absolute;
     content: "FAQ";
-    top: 17%;
+    top: 13%;
     left: 53%;
     transform: translate(-50%, -50%);
     font-size: 3.5em;
@@ -1849,13 +1983,13 @@ access
 }
 
 .access h3{
-  font-size: 0.95em;
+  font-size: 1.1em;
 }
 
 .access h2::before {
   position: absolute;
   content: "ACCESS";
-  top: 15%;
+  top: -50%;
   left: 51%;
   transform: translate(-50%, -50%);
   font-size: 5em;
@@ -1901,7 +2035,6 @@ access
 
 .access-txt {
   padding-left: 5%;
-  padding-top: 2.5%;
 }
 
 @media screen and (max-width:768px){
@@ -1912,8 +2045,8 @@ access
 }
 
 .access-txt dt {
-  padding: 1.5em 0 0.5em 0;
-  font-size: 0.8em;
+  padding: 2em 0 1em 0;
+  font-size: 0.85em;
 }
 
 .access-txt p{
@@ -1948,7 +2081,7 @@ contact
 
 input[type="text"] {
   width: 100%;
-  height: 40%;
+  padding:0.6% 0;
 }
 
 input[type="radio"] {
@@ -1958,10 +2091,11 @@ input[type="radio"] {
 
 label {
   font-weight: bold;
+  font-size: 0.9em;
 }
 
 .contact h2 {
-  font-size: 3em;
+  font-size: 3.1em;
   font-weight: bold;
   text-align: center;
 }
@@ -1984,15 +2118,15 @@ label {
 .contact h3 {
   text-align: center;
   font-weight: bold;
+  font-size: 1.2em;
 }
 
 .rd-cnt-txt-1 {
-  text-align: left;
   width: 8%;
 }
 
 .radio-cnt-2 {
-  padding-top: 3%;
+  padding-top: 1.3em;
   width: 100%;
   margin-right: auto;
 }
@@ -2018,7 +2152,7 @@ label {
   display: inline-block;
   color: #1f1e1e;
   background-color: #fff;
-  padding: 0.5% 5%;
+  padding: 0.5% 4%;
   font-weight: bold;
 }
 
@@ -2037,9 +2171,9 @@ label {
 }
 
 .contact-form {
-  padding-left: 30vw;
-  padding-right: 30vw;
-  padding-bottom: 8%;
+  padding-left: 30%;
+  padding-right: 25%;
+  padding-bottom: 7%;
 }
 
 @media screen and (max-width:768px){
@@ -2055,13 +2189,6 @@ label {
   text-align: center;
 }
 
-.second-txt span {
-  font-size: 3em;
-}
-
-.contact p {
-  text-align: center;
-}
 
 form {
   padding-top: 1em;
@@ -2069,8 +2196,7 @@ form {
 }
 
 .contact-content {
-  padding-top: 1.5em;
-  padding-bottom: 1em;
+  padding-top: 1.3em;
 }
 
 .rd-cnt-m {
@@ -2079,16 +2205,17 @@ form {
 
 .contact-form textarea {
   width: 100%;
-  height: 10em;
+  height: 12.5em;
 }
 
 .radio-cnt-1 {
   display: block;
-  
+  padding-top: 1.3em;
+  text-align: left;
 }
 
 .submit-btn {
-  padding: 2% 30%;
+  padding: 1.55% 25.8%;
   align-items: center;
   font-weight: bold;
   font-size: 1.5em;
@@ -2104,7 +2231,7 @@ form {
 }
 
 .submit-content {
-  padding-top: 5%;
+  padding-top: 9.5%;
   text-align: center;
 }
 
@@ -2139,10 +2266,8 @@ nav
 }
 
 .nav-wrapper {
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-top: 26vh;
 }
 
 @media screen and (max-width:768px){
