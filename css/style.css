@@ -57,12 +57,13 @@ header {
 }
 
 header img{
-  width: 67px;
-  height: 83.1px;
+  width: 8vw;
+  object-fit: cover;
 }
 
 @media screen and (max-width:768px){
   .header {
+    display: none;
     position: absolute;
     top: 5%;
     left: 5%;
@@ -80,10 +81,6 @@ body {
   font-family: 游ゴシック;
 }
 
-li::marker{
-  color: #95ff4a;
-}
-
 
 /*
 top
@@ -97,12 +94,13 @@ top
   background-size: cover;
   position: relative;
   display: block;
+  z-index: 100000;
 }
 
 @media screen and (max-width:768px){
   .top {
     background-image: url(../images/top_img.png);
-    aspect-ratio: 5 / 11;
+    aspect-ratio: 5 / 9;
     color: #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,6 +109,12 @@ top
     display: flex;
     flex-direction: row-reverse;
   }
+}
+
+.top-logo{
+  position: absolute;
+  top:5%;
+  left: 5%;
 }
 
 
@@ -199,7 +203,7 @@ top
     content: "ユナイツ";
     color: #ffffff;
     position: absolute;
-    right: 46%;
+    right: 43%;
     bottom:42%;
     font-size: 0.4em;
     letter-spacing: 0.8em;
@@ -256,7 +260,7 @@ personal-gym
 
 .personal-gym h2::before {
   position: absolute;
-  content: "PESONAL GYM";
+  content: "PERSONAL GYM";
   left: 50%;
   top: -10%;
   transform: translate(-50%, -50%);
@@ -269,7 +273,7 @@ personal-gym
 @media screen and (max-width:768px){
   .personal-gym h2::before {
     position: absolute;
-    content: "PESONAL GYM";
+    content: "PERSONAL GYM";
     top: 2%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -404,6 +408,7 @@ concept
 
 .concept span {
   border-bottom: solid #95ff4a 1px;
+  padding-bottom: 2px;
 }
 
 .concept img {
@@ -439,6 +444,17 @@ question
   margin:auto;
 }
 
+@media screen and (max-width:768px){
+  .question-wrapper {
+    padding-right: 5%;
+    padding-left: 10%;
+    padding-bottom: 2%;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin:auto;
+  }
+}
+
 .question h2 {
   padding-top: 25%;
   padding-bottom: 10%;
@@ -449,7 +465,7 @@ question
 
 @media screen and (max-width:768px){
   .question h2 {
-    padding-top: 20%;
+    padding-top: 25%;
     font-size: 4.1vw;
     text-align: center;
     position: relative;
@@ -472,7 +488,7 @@ question
   .question h2::before {
     position: absolute;
     content: "QUESTION";
-    top: 55%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2.3em;
@@ -495,7 +511,7 @@ question
 }
 
 .question li {
-  padding-top: 2%;
+  padding-top: 2.8%;
 }
 
 @media screen and (max-width:768px){
@@ -558,6 +574,11 @@ question
   width: 47%;
 }
 
+.qs3-txt{
+  padding-bottom: 10%;
+  width: 50%;
+}
+
 @media screen and (max-width:768px){
   .qs1-txt{
     padding-bottom: 10%;
@@ -569,23 +590,53 @@ question
     padding-bottom: 10%;
     width: 100%;
   }
+
+  .qs3-txt{
+    padding-bottom: 10%;
+    width: 100%;
+  }
 }
 
-.question span {
+.num-span {
   display: inline-block;
   color: #95ff4a;
   font-size: 2.5em;
   line-height: auto;
-  padding-bottom: 3%;
+  padding-bottom: 4.6%;
 }
 
+.qs1-txt-span{
+  position: relative;
+}
+
+.qs1-txt-span::before{
+  position: absolute;
+  content: "からだ";
+  font-size: 10px;
+  top: -70%;
+  left: 15%;
+}
+
+
 @media screen and (max-width:768px){
-  .question span {
+  .num-span span {
     display: inline-block;
     color: #95ff4a;
     font-size: 2.5em;
     line-height: auto;
     padding-bottom: 6%;
+  }
+
+  .qs1-txt-span{
+    position: relative;
+  }
+  
+  .qs1-txt-span::before{
+    position: absolute;
+    content: "からだ";
+    font-size: 2vw;
+    top: -70%;
+    left: 15%;
   }
 }
 
@@ -769,7 +820,7 @@ facility
   font-weight: bold;
   color: #1f1e1e;
   text-align: center;
-  padding-top: 24%;
+  padding-top: 22.5%;
 }
 
 @media screen and (max-width:768px){
@@ -777,7 +828,7 @@ facility
     font-weight: bold;
     color: #1f1e1e;
     text-align: center;
-    padding-top: 28%;
+    padding-top: 30%;
   }
 }
 
@@ -787,7 +838,7 @@ facility
   font-weight: bold;
   font-size: 1.5em;
   line-height: 2em;
-  padding-bottom: 8%;
+  padding-bottom: 6.7%;
   position: relative;
 }
 
@@ -804,6 +855,7 @@ facility
   position: absolute;
   content: "FACILITY";
   left: 50%;
+  top: -3%;
   transform: translate(-50%, -50%);
   font-size: 4.5em;
   white-space: nowrap;
@@ -850,28 +902,27 @@ staff
   color: #1f1e1e;
   font-weight: bold;
   padding-top: 15%;
-  padding-bottom: 8%;
 }
 
 @media screen and (max-width:768px){
   .staff {
     color: #1f1e1e;
     font-weight: bold;
-    padding-top: 38%;
+    padding-top: 40%;
     padding-bottom: 15%;
   }
 }
 
 .staff h2 {
   font-size: 1.6em;
-  padding-bottom: 10%;
+  padding-bottom: 6.6%;
   text-align: center;
   position: relative;
 }
 
 @media screen and (max-width:768px){
   .staff h2 {
-    font-size: 4.1vw;
+    font-size: 4.25vw;
     padding-bottom: 13.5%;
     text-align: center;
     position: relative;
@@ -882,7 +933,7 @@ staff
 .staff h2::before {
   position: absolute;
   content: "UNITES STAFF";
-  top: 10%;
+  top: -5%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4.5em;
@@ -966,6 +1017,7 @@ staff
 .staff span {
   color: #31d01c;
   font-size: 0.9em;
+  letter-spacing: 0.1em;
 }
 
 @media screen and (max-width:768px){
@@ -1039,6 +1091,7 @@ staff
   .st-img{
     width: 100%;
     object-fit: cover;
+    aspect-ratio: 1/0.813;
   }
 }
 
@@ -1196,7 +1249,7 @@ our service
 
   .service {
     padding-top: 8%;
-    padding-bottom: 15%;
+    padding-bottom: 31%;
     font-weight: bold;
   }
 }
@@ -1236,7 +1289,7 @@ our service
 .service-1 {
   display: flex;
   justify-content: space-between;
-  padding-top: 10%;
+  padding-top: 7%;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -1246,7 +1299,7 @@ our service
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 12%;
+    padding-top: 17%;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -1267,7 +1320,26 @@ our service
     flex-direction: column;
     flex-direction: column-reverse;
     justify-content: space-between;
-    padding-top: 12%;
+    padding-top: 17%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+ }
+
+ .service-3 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:768px){
+  .service-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 17%;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -1373,12 +1445,12 @@ our service
 
 @media screen and (max-width:768px){
   .service-cnt h3 {
-    font-size: 5vw;
+    font-size: 4.5vw;
     order: 1;
   }
   
   .service-cnt-1 h3 {
-    font-size: 5vw;
+    font-size: 4.5vw;
     order: -1;
   }
 
@@ -1514,18 +1586,29 @@ our service
 .service-cnt-1 p {
   padding-top: 3em;
 }
+
 /*
 strength
 */
 
 .our-strength {
-  padding-top: 9.5%;
   font-weight: bold;
-  padding-bottom: 9%;
   padding-left: 10%;
   padding-right: 5%;
   max-width: 1440px;
   margin:auto;
+}
+
+.our-strength::before{
+  content: "";
+  display: block;
+  border-bottom: 1px solid #1f1e1e;
+}
+
+.our-strength::after{
+  content: "";
+  display: block;
+  border-bottom: 1px solid #1f1e1e;
 }
 
 @media screen and (max-width:768px){
@@ -1546,12 +1629,14 @@ strength
 .strength-title h2 {
   color: #95ff4a;
   font-size: 3em;
+  padding-top: 9%;
 }
 
 @media screen and (max-width:768px){
   .strength-title h2 {
     color: #95ff4a;
     font-size: 8.2vw;
+    padding-top: 35%;
   }
 }
 
@@ -1568,6 +1653,7 @@ strength
 .strength-wrapper {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 11%;
 }
 
 @media screen and (max-width:768px){
@@ -1578,21 +1664,27 @@ strength
     padding-right: 2%;
     justify-content: space-between;
     padding-top: 10%;
+    padding-bottom: 32%;
   }
 }
 
 
-.st-txt p{
+.st-txt ul{
   line-height: 2em;
   font-size: 0.9em;
+  padding-left: 4%;
 }
 
 @media screen and (max-width:768px){
-  .st-txt p{
+  .st-txt ul{
     line-height: 2.2em;
     font-size: 3.28vw;
     padding-top: 2.5%;
     padding-bottom: 12%;
+  }
+
+  .st-txt p{
+    font-size: 3.5vw;
   }
 }
 
@@ -1845,7 +1937,7 @@ pricerist
 .price-content:nth-child(2) .pr-line::before {
   content: "";
   position: absolute;
-  height: 100%;
+  height: 110%;
   width: 2px;
   border-left: 1px dashed #fff;
   left: -2% ;
@@ -1866,7 +1958,7 @@ pricerist
 .price-content:nth-child(2) .pr-line::after {
   content: "";
   position: absolute;
-  height: 100%;
+  height: 110%;
   width: 3px;
   border-right: 1px dashed #fff;
   right: -2% ;
@@ -1965,14 +2057,14 @@ pricerist
 }
 
 .price-txt-2 {
-  padding-bottom: 5%;
-  padding-top: 1em;
+  padding-bottom: 2.5%;
+  padding-top: 0.7em;
   font-size: 0.8em;
 }
 
 .pr-span {
-  color: #1f1e1e;
-  background-color: #ffffff;
+  color: #f5f5f5;
+  background-color: #1f1e1e;
   padding: 0.2em;
   margin-right: 1em;
 }
@@ -2029,21 +2121,113 @@ pricerist
   }
 }
 
+.pr-pay{
+  width: 40%;
+  max-width: 1200px;
+  margin: 5% auto;
+  background-color: #f5f5f5;
+  color: #1f1e1e;
+}
 
+@media screen and (max-width:768px){
+  .pr-pay{
+    width: 100%;
+    max-width: 1200px;
+    margin: 5% auto;
+    background-color: #f5f5f5;
+    color: #1f1e1e;
+  }
+}
+
+.pr-pay p{
+  padding-bottom: 3%;
+}
+
+.pr-pay-wrap{
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+@media screen and (max-width:768px){
+  .pr-pay-wrap{
+    padding-top: 3%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.credit{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3%;
+}
+
+.credit img{
+  padding: 1%;
+}
+
+@media screen and (max-width:768px){
+  .credit img{
+    padding: 1%;
+    width: 15%;
+    object-fit: cover;
+  }
+}
+
+
+.elect-1{
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width:768px){
+  .elect-1{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.elect-1 img{
+  padding: 1%;
+}
+
+@media screen and (max-width:768px){
+  .elect-1 img{
+    padding: 1%;
+    width: 45%;
+  }
+}
+
+.elect-2{
+  display: flex;
+  justify-content: center;
+}
+
+.elect-2 img{
+  padding: 1%;
+}
+
+@media screen and (max-width:768px){
+  .elect-2 img:nth-child(1){
+    padding: 1%;
+    width: 45%;
+  }
+}
 
 /*
 FAQ
 */
 
 .faq {
-  padding-top: 23%;
+  padding-top: 22%;
   font-weight: bold;
 }
 
 @media screen and (max-width:768px){
   .faq {
-    padding-top: 39%;
-    padding-bottom: 25%;
+    padding-top: 20%;
+    padding-bottom: 33%;
     position: relative;
     font-weight: bold;
   }
@@ -2051,15 +2235,17 @@ FAQ
 
 .faq h2 {
   text-align: center;
-  padding-left: 4%;
+  padding-left: 15%;
+  padding-right: 10%;
   position: relative;
+  padding-bottom: 5%;
 }
 
 @media screen and (max-width:768px){
   .faq h2 {
     text-align: center;
     padding-bottom: 15%;
-    font-size: 6.15vw;
+    font-size: 4.5vw;
   }
 }
 
@@ -2079,7 +2265,7 @@ FAQ
   .faq h2::before {
     position: absolute;
     content: "FAQ";
-    top: 13%;
+    top: -3%;
     left: 53%;
     transform: translate(-50%, -50%);
     font-size: 3.5em;
@@ -2135,7 +2321,7 @@ FAQ
     background-color: #000;
     border-radius: 5px 5px 0 0;
     display: block;
-    font-size: 4.1vw;
+    font-size: 3.5vw;
   }
 }
 
@@ -2146,7 +2332,22 @@ FAQ
   border: 1px solid #000;
   border-radius: 0 0 10px 10px;
   padding: 2em 1em;
+  text-align: center;
+  margin-bottom: 6%;
 }
+
+@media screen and (max-width:768px){
+  .faq-wrapper .qa-1 p {
+    border: 1px solid #000;
+    border-radius: 0 0 10px 10px;
+    padding: 2em 1em;
+    text-align: center;
+    margin-bottom: 6%;
+    font-size: 2.65vw;
+  }
+  
+}
+
 
 /*
 access
@@ -2161,7 +2362,7 @@ access
 @media screen and (max-width:768px){
   .access {
     padding-top: 8%;
-    padding-bottom: 20%;
+    padding-bottom: 17%;
     font-weight: bold;
   }
 }
@@ -2177,7 +2378,7 @@ access
 @media screen and (max-width:768px){
   .access h2 {
     text-align: center;
-    font-size: 6.15vw;
+    font-size: 4.55vw;
     padding-left: 8%;
     padding-right: 8%;
     position: relative;
@@ -2190,14 +2391,14 @@ access
 
 @media screen and (max-width:768px){
   .access h3{
-    font-size: 5.15vw;
+    font-size: 4.3vw;
   }
 }
 
 .access h2::before {
   position: absolute;
   content: "ACCESS";
-  top: -50%;
+  top: -80%;
   left: 51%;
   transform: translate(-50%, -50%);
   font-size: 5em;
@@ -2225,7 +2426,7 @@ access
   padding-left: 15%;
   padding-right: 10%;
   justify-content: space-between;
-  padding-top: 8%;
+  padding-top:10%;
   max-width: 1440px;
   margin: auto;
 }
@@ -2242,7 +2443,7 @@ access
 }
 
 .access-txt {
-  padding-left: 5%;
+  padding-left:5%;
 }
 
 @media screen and (max-width:768px){
@@ -2300,7 +2501,7 @@ contact
 */
 
 .contact {
-  margin-top: 11%;
+  margin-top: 14%;
   color: #ffffff;
   background-color: #1f1e1e;
   padding-top: 3%;
@@ -2412,7 +2613,7 @@ label {
   }
 }
 
-.contact p {
+.contact a {
   font-weight: bold;
 }
 
@@ -2472,7 +2673,9 @@ form {
   align-items: center;
   font-weight: bold;
   font-size: 1.5em;
+  position: relative;
 }
+
 
 @media screen and (max-width:768px){
   .submit-btn {
@@ -2486,6 +2689,17 @@ form {
 .submit-content {
   padding-top: 9.5%;
   text-align: center;
+  position: relative;
+}
+
+.submit-content::after {
+  content: "";
+  position: absolute;
+  border: 8px solid transparent;
+  border-top: 9px solid #1f1e1e;
+  transform: rotate(-90deg);
+  left: 74%;
+  top: 66%;
 }
 
 @media screen and (max-width:768px){
@@ -2640,7 +2854,7 @@ footer
     bottom: 0;
     right: 0;
     width: 100%;
-    z-index: 1000000;
+    z-index: 10;
     background-color: #f5f5f5;
    }
 
