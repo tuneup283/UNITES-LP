@@ -96,6 +96,7 @@ top
   position: relative;
   display: block;
   z-index: 100000;
+  height: 100vh;
 }
 
 @media screen and (max-width:768px){
@@ -109,6 +110,7 @@ top
     z-index: 100;
     display: flex;
     flex-direction: row-reverse;
+    height:100%;
   }
 }
 
@@ -572,6 +574,7 @@ question
   border-radius: 10px;
   position: absolute;
   left: -4%;
+  top: 2.5vh;
 }
 
 @media screen and (max-width:768px){
@@ -2141,7 +2144,7 @@ pricerist
   .price-list dl {
     display: flex;
     flex-wrap: wrap;
-    padding: 5% 1% 0 1%;
+    padding: 5%;
   }
 }
 
@@ -2245,7 +2248,7 @@ pricerist
     width: 50%;
     padding-bottom: 1em;
     font-size: 5vw;
-    text-align:center;
+    text-align:right;
   }
 }
 
@@ -3248,4 +3251,7 @@ footer
   transform: rotate(-90deg);
   top: 35%;
   right: 2rem;
+}
+.price-hidden{
+  visibility: hidden;
 }
