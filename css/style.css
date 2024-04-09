@@ -96,7 +96,6 @@ top
   position: relative;
   display: block;
   z-index: 100000;
-  height: 100vh;
 }
 
 @media screen and (max-width:768px){
@@ -710,6 +709,16 @@ question
   }
 }
 
+.qs-lp-img{
+  width: 530px;
+  height: 320px;
+  object-fit: cover;
+}
+.qs-sp-img{
+  width: 361px;
+  height: 161px;
+  object-fit: cover;
+}
 
 /*
 コンタクトバナー
@@ -954,19 +963,31 @@ facility
 
 .facility-img {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   max-width: 1440px;
   margin: auto;
+  object-fit: cover;
 }
+
 .facility-img img {
   width: calc(100% / 3);
 }
 
-@media screen and (max-width:768px){
-  .facility-img img {
-    width: calc(100% / 2);
-  }
+.fac-img-4{
+  width: 346px;
+  height: 23vw;
+  object-fit: cover;
+}
+.fac-img-5{
+  width: 346px;
+  height: 23vw;
+  object-fit: cover;
+}
+.fac-img-6{
+  width: 346px;
+  height: 23vw;
+  object-fit: cover;
 }
 
 /*
@@ -1032,7 +1053,6 @@ staff
     font-family: jost;
   }
 }
-
 
 .st-h3-1{
   font-size: min(1.6vw,24px);
@@ -1319,6 +1339,17 @@ staff
     font-size: 2.2em;
     padding: 10% 0.3em 0;
   }
+}
+
+.st-img-lp{
+  width: 340px;
+  height: 300px;
+  object-fit: cover;
+}
+.st-img-sp{
+width: 361px;
+height: 293px;
+object-fit: cover;
 }
 
 /*
@@ -1739,6 +1770,27 @@ our service
 
 .service-cnt-1 p {
   padding-top: 3em;
+}
+
+.srv-img-1{
+    width: 495px;
+    height: 341px;
+    object-fit: cover;
+}
+.svc-cnt-2{
+  width: 495px;
+  height: 341px;
+  object-fit: cover;
+}
+.srv-img-3{
+  width: 495px;
+  height: 341px;
+  object-fit: cover;
+}
+.srv-img-4{
+  width: 495px;
+  height: 341px;
+  object-fit: cover;
 }
 
 /*
@@ -2373,7 +2425,7 @@ pricerist
 .pr-pay-wrap{
   padding-top: 3%;
   padding-bottom: 3%;
-  background-color: #f5f5f5;
+  background-color: #fff;
   padding-left: 16%;
   padding-right: 16%;
 }
@@ -2384,7 +2436,7 @@ pricerist
     padding-bottom: 10%;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: #f5f5f5;
+    background-color: #fff;
   }
 }
 
@@ -2473,6 +2525,96 @@ pricerist
     padding: 1%;
   }
 }
+
+.cr-img-1{
+  width: 62px;
+  height: 40px;
+  object-fit: cover;
+}
+.cr-img-2{
+  width: 62px;
+  height: 40px;
+  object-fit: cover;
+}
+.cr-img-3{
+  width: 62px;
+  height: 40px;
+  object-fit: cover;
+}
+.cr-img-4{
+  width: 62px;
+  height: 40px;
+  object-fit: cover;
+}
+.cr-img-5{
+  width: 61px;
+  height: 43px;
+  object-fit: cover;
+}
+.cr-img-6{
+  width: 62px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.電子マネー1{
+  width: 190px;
+  height: 50px;
+  object-fit: cover;
+  object-position: top 0px left 0px;
+}
+.電子マネー2{
+  width: 190px;
+  height: 50px;
+  object-fit: cover;
+  object-position: top -40px left 0px;
+}
+.電子マネー3{
+  width: 190px;
+  height: 40px;
+  object-fit: cover;
+  object-position: top -75px left 0px;
+}
+.電子マネー4{
+  width: 55px;
+  height: 45px;
+  object-fit: cover;
+}
+.電子マネー5{
+  width: 55px;
+  height: 45px;
+  object-fit: cover;
+}
+
+.電子マネー1-p{
+  width: 190px;
+  height: 45px;
+  object-fit: cover;
+  object-position: top 0px left 0px;
+}
+.電子マネー2-p{
+  width: 190px;
+  height: 45px;
+  object-fit: cover;
+  object-position: top -36px left 0px;
+}
+.電子マネー3-p{
+  width: 190px;
+  height: 40px;
+  object-fit: cover;
+  object-position: top -75px left 0px;
+}
+.電子マネー4-p{
+  width: 55px;
+  height: 45px;
+  object-fit: cover;
+}
+.電子マネー5-p{
+  width: 55px;
+  height: 45px;
+  object-fit: cover;
+}
+
 
 /*
 FAQ
@@ -3028,6 +3170,14 @@ nav
   padding:67% 0;
 }
 
+.line-logo{
+  width: 30px;
+  object-fit: cover;
+}
+.line-logo-sp{
+  width: 30px;
+  object-fit: cover;
+}
 
 
 /*
