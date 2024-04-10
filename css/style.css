@@ -2636,10 +2636,9 @@ FAQ
 
 .faq h2 {
   text-align: center;
-  padding-left: 15%;
-  padding-right: 10%;
   position: relative;
   padding-bottom: 5%;
+  
 }
 
 @media screen and (max-width:768px){
@@ -2654,7 +2653,7 @@ FAQ
   position: absolute;
   content: "FAQ";
   top: -30%;
-  left: 53%;
+  left: 50%;
   transform: translate(-50%, -50%);
   font-size: 5em;
   white-space: nowrap;
@@ -2681,6 +2680,7 @@ FAQ
 .qa-1 {
   margin: 3% auto;
   position: relative;
+  width: 60vw;
 }
 
 .qa-span::after {
@@ -2693,10 +2693,7 @@ FAQ
   border-top: 12px solid #ffffff;
 }
 
-.faq-wrapper {rotate: (180deg);
-  padding-left: 20%;
-  padding-right: 15%;
-  max-width: 1440px;
+.faq-wrapper {
   margin: auto;
 }
 
