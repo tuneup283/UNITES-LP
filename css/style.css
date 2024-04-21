@@ -4,14 +4,15 @@
 base style
 */
 
-.html {
-  font-family: YuGothic;
+/* .html {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-style: normal;
+} */
+body{
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 900;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
 @media screen and (max-width:768px){
   .body{
     position: relative;
@@ -20,19 +21,11 @@ base style
 
 .main-section {
   width: 95%;
-<<<<<<< HEAD
-=======
-  max-width: 95%;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
 }
 
 @media screen and (max-width:768px){
   .main-section {
     width: 100%;
-<<<<<<< HEAD
-=======
-    max-width: 100vw;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
   }
 }
 
@@ -87,13 +80,7 @@ header img{
   }
 }
 
-<<<<<<< HEAD
 
-=======
-body {
-  font-family: 游ゴシック;
-}
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
 
 
 /*
@@ -109,11 +96,8 @@ top
   position: relative;
   display: block;
   z-index: 100000;
-<<<<<<< HEAD
   width: 95vw;
   height: 100vh;
-=======
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
 }
 
 @media screen and (max-width:768px){
@@ -127,12 +111,8 @@ top
     z-index: 100;
     display: flex;
     flex-direction: row-reverse;
-<<<<<<< HEAD
     height:95vh;
     width: 100vw;
-=======
-    height:100%;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
   }
 }
 
@@ -161,21 +141,13 @@ top
 
 .top-wrap-2{
   display: none;
-<<<<<<< HEAD
   width: 10vw;
-=======
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
 }
 
 @media screen and (max-width:768px){
   .top-wrap-2{
     display: flex;
-<<<<<<< HEAD
     height: 95vh;
-=======
-    width: 10%;
-    height: 100vh;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
     background-color: #f5f5f5;
     color: #1f1e1e;
     align-items: flex-end;
@@ -185,7 +157,7 @@ top
     writing-mode: vertical-rl;
     text-orientation: mixed;
     line-height: 10vw;
-    font-weight: bold;
+    
     font-size: 2.6vw;
   }
 
@@ -198,7 +170,7 @@ top
   }
 
   .top-wrap-2 p{
-    font-weight: bold;
+    
   }
 
   .top-wrap-2 a{
@@ -207,27 +179,29 @@ top
 }
 
 .top h1 {
-  font-weight: bold;
+  font-weight: 900;
   font-size: 3.3em;
   position: relative;
-<<<<<<< HEAD
+
   font-family: "Jost", sans-serif;
-=======
-  font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
 }
 
 @media screen and (max-width:768px){
   .top h1 {
-    font-weight: bold;
+    font-weight: 900;
     font-size: 7.5vw;
     position: relative;
     padding-right: 30%;
-<<<<<<< HEAD
-    font-family: "Jost", sans-serif;
-=======
-    font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
   }
 }
 
@@ -239,11 +213,12 @@ top
   bottom:80%;
   font-size: 0.4em;
   letter-spacing: 0.8em;
-<<<<<<< HEAD
+
   font-family: "Jost", sans-serif;
-=======
-  font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
 }
 
 @media screen and (max-width:768px){
@@ -255,27 +230,25 @@ top
     bottom:42%;
     font-size: 0.4em;
     letter-spacing: 0.8em;
-<<<<<<< HEAD
-    font-family: "Jost", sans-serif;
-=======
-    font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
   }
 }
 
 
 .top-cnt1 p {
-  font-weight: bold;
+  
   font-size: 23px;
-<<<<<<< HEAD
 
-=======
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
 }
 
 @media screen and (max-width:768px){
   .top-cnt1 p {
-    font-weight: bold;
+    
     font-size:3.7vw;
   }
 }
@@ -296,7 +269,7 @@ personal-gym
 
 .personal-gym {
   color: #1f1e1e;
-  font-weight: bold;
+  
 }
 
 .personal-gym h2 {
@@ -304,6 +277,11 @@ personal-gym
   position: relative;
   width: 100%;
   text-align: center;
+
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 @media screen and (max-width:768px){
@@ -325,11 +303,12 @@ personal-gym
   white-space: nowrap;
   z-index: -1;
   color: #f5f5f5;
-<<<<<<< HEAD
+
   font-family: "Jost", sans-serif;
-=======
-  font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
 }
 
 @media screen and (max-width:768px){
@@ -343,11 +322,12 @@ personal-gym
     white-space: nowrap;
     z-index: -1;
     color: #f5f5f5;
-<<<<<<< HEAD
-    font-family: "Jost", sans-serif;
-=======
-    font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
   }
 }
 
@@ -380,7 +360,7 @@ concept
   aspect-ratio: 24 / 11;
   background-image: url(../images/マスクグループ\ 16.png);
   text-align: center;
-  font-weight: bold;
+  
   display: grid;
   place-content: center;
   background-repeat: no-repeat;
@@ -393,7 +373,7 @@ concept
     aspect-ratio: 375 / 817;
     background-image: url(../images/sp_concept_bg.png);
     text-align: center;
-    font-weight: bold;
+    
     display: grid;
     background-repeat: no-repeat;
     background-size:cover;
@@ -437,11 +417,12 @@ concept
     z-index: 0;
     color: #f5f5f5;
     opacity: 0.2;
-<<<<<<< HEAD
-    font-family: "Jost", sans-serif;
-=======
-    font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
   }
 }
 
@@ -498,7 +479,7 @@ question
 */
 
 .question {
-  font-weight: bold;
+  
   /* color: #D3D3D3; */
 }
 
@@ -573,11 +554,12 @@ question
   white-space: nowrap;
   z-index: -1;
   color: #f5f5f5;
-<<<<<<< HEAD
+
   font-family: "Jost", sans-serif;
-=======
-  font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
 }
 
 @media screen and (max-width:768px){
@@ -591,25 +573,26 @@ question
     white-space: nowrap;
     z-index: -1;
     color: #f5f5f5;
-<<<<<<< HEAD
-    font-family: "Jost", sans-serif;
-=======
-    font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
   }
 }
 
 .question h3 {
   font-size: 1.4em;
   line-height: 1.5em;
-  font-weight: bold;
+  
 }
 
 @media screen and (max-width:768px){
   .question h3 {
     font-size: 4.25vw;
     line-height: 1.5em;
-    font-weight: bold;
+    
   }
 }
 
@@ -741,11 +724,12 @@ question
   font-size: 2.7em;
   line-height: auto;
   padding-bottom: 4.6%;
-<<<<<<< HEAD
+
   font-family: "Jost", sans-serif;
-=======
-  font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
 }
 
 .qs1-txt-span{
@@ -756,7 +740,7 @@ question
   position: absolute;
   content: "からだ";
   font-size: 10px;
-  top: -70%;
+  top: -1rem;
   left: 15%;
 }
 
@@ -768,11 +752,12 @@ question
     font-size: 2.5em;
     line-height: auto;
     padding-bottom: 6%;
-<<<<<<< HEAD
-    font-family: "Jost", sans-serif;
-=======
-    font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
   }
 
   .qs1-txt-span{
@@ -783,11 +768,7 @@ question
     position: absolute;
     content: "からだ";
     font-size: 2vw;
-<<<<<<< HEAD
-    top: -100%;
-=======
-    top: -70%;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+    top: -1rem;
     left: 15%;
   }
 }
@@ -863,7 +844,7 @@ question
 
 
 .contact-btn {
-  font-weight: bold;
+  
   font-size: 1.5em;
   text-align: center;
 }
@@ -872,22 +853,15 @@ question
   .contact-btn {
     font-weight:bolder;
     font-size: 1.2em;
-    padding-top: 20%;
+    padding-top: 10%;
     padding-bottom: 10%;
     padding-left: 1%;
   }
 }
-<<<<<<< HEAD
-/* 
-.banner-txt {
-
-} */
-=======
 
 .banner-txt {
 
 }
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
 
 .botun-1 {
   color: #ffffff;
@@ -989,7 +963,7 @@ facility
 */
 
 .facility {
-  font-weight: bold;
+  
   color: #1f1e1e;
   text-align: center;
   padding-top: 22.5%;
@@ -997,7 +971,7 @@ facility
 
 @media screen and (max-width:768px){
   .facility {
-    font-weight: bold;
+    
     color: #1f1e1e;
     text-align: center;
     padding-top: 30%;
@@ -1007,7 +981,7 @@ facility
 
 
 .facility h2 {
-  font-weight: bold;
+  
   font-size: 1.5em;
   line-height: 2em;
   padding-bottom: 6.7%;
@@ -1016,7 +990,7 @@ facility
 
 @media screen and (max-width:768px){
   .facility h2 {
-    font-weight: bold;
+    
     font-size: 4.1vw;
     line-height: 2em;
     padding-bottom: 15%;
@@ -1033,11 +1007,12 @@ facility
   white-space: nowrap;
   z-index: -1;
   color: #f5f5f5;
-<<<<<<< HEAD
+
   font-family: "Jost", sans-serif;
-=======
-  font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
 }
 
 @media screen and (max-width:768px){
@@ -1051,11 +1026,12 @@ facility
     white-space: nowrap;
     z-index: -1;
     color: #f5f5f5;
-<<<<<<< HEAD
-    font-family: "Jost", sans-serif;
-=======
-    font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
   }
 }
 
@@ -1086,10 +1062,6 @@ facility
   width: 346px;
   height: 23vw;
   object-fit: cover;
-<<<<<<< HEAD
-  object-position: top -9vw left 0;
-=======
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
 }
 
 /*
@@ -1098,14 +1070,14 @@ staff
 
 .staff {
   color: #1f1e1e;
-  font-weight: bold;
+  
   padding-top: 15%;
 }
 
 @media screen and (max-width:768px){
   .staff {
     color: #1f1e1e;
-    font-weight: bold;
+    
     padding-top: 40%;
     padding-bottom: 15%;
   }
@@ -1138,11 +1110,12 @@ staff
   white-space: nowrap;
   z-index: -1;
   color: #f5f5f5;
-<<<<<<< HEAD
+
   font-family: "Jost", sans-serif;
-=======
-  font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
 }
 
 @media screen and (max-width:768px){
@@ -1156,11 +1129,12 @@ staff
     white-space: nowrap;
     z-index: -1;
     color: #f5f5f5;
-<<<<<<< HEAD
-    font-family: "Jost", sans-serif;
-=======
-    font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
   }
 }
 
@@ -1272,7 +1246,7 @@ staff
 .staff-txt h3 span {
   color: #1f1e1e;
   font-size: 0.58em;
-  font-weight: bold;
+  
 }
 
 .staff-1 {
@@ -1367,22 +1341,14 @@ staff
 
 .staff-logo{
   height:2.8em;
-<<<<<<< HEAD
-  padding-top: 4.8%;
-=======
   padding-top: 6%;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
 }
 
 @media screen and (max-width:768px){
   .staff-logo{
     width: 7vw;
     object-fit: cover;
-<<<<<<< HEAD
-    padding-top: 7.8%;
-=======
     padding-top: 5%;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
   }
 }
 
@@ -1431,14 +1397,14 @@ staff
 
 .staff-career p span {
   color: #1f1e1e;
-  font-weight: bold;
+  
   font-size: 1.8em;
   padding: 10% 0.3em 0;
 }
 
 .staff-career-2 p span {
   color: #1f1e1e;
-  font-weight: bold;
+  
   font-size: 1.8em;
   padding: 0 0.3em;
 }
@@ -1446,14 +1412,14 @@ staff
 @media screen and (max-width:768px){
   .staff-career-2 p span {
     color: #1f1e1e;
-    font-weight: bold;
+    
     font-size: 2.2em;
     padding: 0 0.3em;
   }
 
   .staff-career p span {
     color: #1f1e1e;
-    font-weight: bold;
+    
     font-size: 2.2em;
     padding: 10% 0.3em 0;
   }
@@ -1477,7 +1443,7 @@ our service
 .service {
   padding-top: 8%;
   padding-bottom: 10%;
-  font-weight: bold;
+  
 }
 
 .service li{
@@ -1540,7 +1506,7 @@ our service
   .service {
     padding-top: 35%;
     padding-bottom: 31%;
-    font-weight: bold;
+    
   }
 }
 
@@ -1548,11 +1514,12 @@ our service
   text-align: center;
   font-size: 3em;
   color: #95FF4B;
-<<<<<<< HEAD
+
   font-family: "Jost", sans-serif;
-=======
-  font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
 }
 
 @media screen and (max-width:768px){
@@ -1560,11 +1527,12 @@ our service
     text-align: center;
     font-size: 8.2vw;
     color: #95FF4B;
-<<<<<<< HEAD
-    font-family: "Jost", sans-serif;
-=======
-    font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
   }
 }
 
@@ -1779,11 +1747,12 @@ our service
   white-space: nowrap;
   z-index: -1;
   color: #f5f5f5;
-<<<<<<< HEAD
+
   font-family: "Jost", sans-serif;
-=======
-  font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
 }
 
 .sr-bg-1{
@@ -1800,11 +1769,12 @@ our service
     white-space: nowrap;
     z-index: -1;
     color: #f5f5f5;
-<<<<<<< HEAD
-    font-family: "Jost", sans-serif;
-=======
-    font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
   }
 }
 
@@ -1821,11 +1791,12 @@ our service
   white-space: nowrap;
   z-index: -1;
   color: #f5f5f5;
-<<<<<<< HEAD
+
   font-family: "Jost", sans-serif;
-=======
-  font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
 }
 
 @media screen and (max-width:768px){
@@ -1838,11 +1809,12 @@ our service
     white-space: nowrap;
     z-index: -1;
     color: #f5f5f5;
-<<<<<<< HEAD
-    font-family: "Jost", sans-serif;
-=======
-    font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
   }
 }
 
@@ -1859,11 +1831,12 @@ our service
   white-space: nowrap;
   z-index: -1;
   color: #f5f5f5;
-<<<<<<< HEAD
+
   font-family: "Jost", sans-serif;
-=======
-  font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
 }
 
 @media screen and (max-width:768px){
@@ -1876,11 +1849,12 @@ our service
     white-space: nowrap;
     z-index: -1;
     color: #f5f5f5;
-<<<<<<< HEAD
-    font-family: "Jost", sans-serif;
-=======
-    font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
   }
 }
 
@@ -1897,11 +1871,12 @@ our service
   white-space: nowrap;
   z-index: -1;
   color: #f5f5f5;
-<<<<<<< HEAD
+
   font-family: "Jost", sans-serif;
-=======
-  font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
 }
 
 @media screen and (max-width:768px){
@@ -1914,11 +1889,12 @@ our service
     white-space: nowrap;
     z-index: -1;
     color: #f5f5f5;
-<<<<<<< HEAD
-    font-family: "Jost", sans-serif;
-=======
-    font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
   }
 }
 
@@ -1956,7 +1932,7 @@ strength
 */
 
 .our-strength {
-  font-weight: bold;
+  
   padding-left: 10%;
   padding-right: 5%;
   max-width: 1440px;
@@ -1978,7 +1954,7 @@ strength
 @media screen and (max-width:768px){
   .our-strength {
     padding-top: 9.5%;
-    font-weight: bold;
+    
     padding-bottom: 9%;
     padding-left: 4%;
     padding-right: 4%;
@@ -1994,11 +1970,12 @@ strength
   color: #95FF4B;
   font-size: 3em;
   padding-top: 9%;
-<<<<<<< HEAD
+
   font-family: "Jost", sans-serif;
-=======
-  font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
 }
 
 @media screen and (max-width:768px){
@@ -2006,11 +1983,12 @@ strength
     color: #95FF4B;
     font-size: 8.2vw;
     padding-top: 35%;
-<<<<<<< HEAD
-    font-family: "Jost", sans-serif;
-=======
-    font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
   }
 }
 
@@ -2192,7 +2170,7 @@ pricerist
 .price-list {
   background-color: #1f1e1e;
   color: #ffffff;
-  font-weight: bold;
+  
   padding-top: 9%;
   padding-bottom: 10%;
 }
@@ -2226,11 +2204,12 @@ pricerist
 
 .price-title h2 {
   font-size: 3em;
-<<<<<<< HEAD
+
   font-family: "Jost", sans-serif;
-=======
-  font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
 }
 
 .price-title p {
@@ -2316,11 +2295,12 @@ pricerist
 
   .price-title h2 {
     font-size: 8.2vw;
-<<<<<<< HEAD
-    font-family: "Jost", sans-serif;
-=======
-    font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
   }
   
   .price-title p {
@@ -2425,9 +2405,16 @@ pricerist
 }
 
 .pr-li-1 dd {
-  width: 75%;
+  width: 35%;
   padding-bottom: 1em;
   text-align:right;
+}
+
+.price-column{
+  font-size:.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width:768px){
@@ -2440,10 +2427,14 @@ pricerist
   }
   
   .pr-li-1 dd {
-    width: 75%;
+    width: 40%;
     padding-bottom:1em;
     font-size: 5vw;
     text-align:right;
+  }
+  .pr-li-1 .price-column{
+    font-size:.6rem;
+    width: 30%;
   }
 }
 
@@ -2741,21 +2732,13 @@ pricerist
   width: 190px;
   height: 50px;
   object-fit: cover;
-<<<<<<< HEAD
-  object-position: top -41px left 0px;
-=======
   object-position: top -40px left 0px;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
 }
 .電子マネー3{
   width: 190px;
   height: 40px;
   object-fit: cover;
-<<<<<<< HEAD
-  object-position: top -77px left 0px;
-=======
   object-position: top -75px left 0px;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
 }
 .電子マネー4{
   width: 55px;
@@ -2770,17 +2753,6 @@ pricerist
 
 .電子マネー1-p{
   width: 190px;
-<<<<<<< HEAD
-  height: 50px;
-  object-fit: cover;
-  object-position: top 0.5vw left 0px;
-}
-.電子マネー2-p{
-  width: 190px;
-  height: 42px;
-  object-fit: cover;
-  object-position: top -8.5vw left 0px;
-=======
   height: 45px;
   object-fit: cover;
   object-position: top 0px left 0px;
@@ -2790,17 +2762,12 @@ pricerist
   height: 45px;
   object-fit: cover;
   object-position: top -36px left 0px;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
 }
 .電子マネー3-p{
   width: 190px;
   height: 40px;
   object-fit: cover;
-<<<<<<< HEAD
-  object-position: top -17vw left 0px;
-=======
   object-position: top -75px left 0px;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
 }
 .電子マネー4-p{
   width: 55px;
@@ -2820,7 +2787,7 @@ FAQ
 
 .faq {
   padding-top: 22%;
-  font-weight: bold;
+  
 }
 
 @media screen and (max-width:768px){
@@ -2828,7 +2795,7 @@ FAQ
     padding-top: 20%;
     padding-bottom: 33%;
     position: relative;
-    font-weight: bold;
+    
   }
 }
 
@@ -2857,11 +2824,12 @@ FAQ
   white-space: nowrap;
   z-index: -1;
   color: #f5f5f5;
-<<<<<<< HEAD
+
   font-family: "Jost", sans-serif;
-=======
-  font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
 }
 
 @media screen and (max-width:768px){
@@ -2875,11 +2843,12 @@ FAQ
     white-space: nowrap;
     z-index: -1;
     color: #f5f5f5;
-<<<<<<< HEAD
-    font-family: "Jost", sans-serif;
-=======
-    font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
   }
 }
 
@@ -2962,14 +2931,14 @@ access
 .access {
   padding-top: 15.3%;
   position: relative;
-  font-weight: bold;
+  
 }
 
 @media screen and (max-width:768px){
   .access {
     padding-top: 8%;
     padding-bottom: 17%;
-    font-weight: bold;
+    
   }
 }
 
@@ -3011,11 +2980,12 @@ access
   white-space: nowrap;
   z-index: -1;
   color: #f5f5f5;
-<<<<<<< HEAD
+
   font-family: "Jost", sans-serif;
-=======
-  font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
 }
 
 @media screen and (max-width:768px){
@@ -3029,11 +2999,12 @@ access
     white-space: nowrap;
     z-index: -1;
     color: #f5f5f5;
-<<<<<<< HEAD
-    font-family: "Jost", sans-serif;
-=======
-    font-family: jost;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+  
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
   }
 }
 
@@ -3134,13 +3105,13 @@ input[type="radio"] {
 }
 
 label {
-  font-weight: bold;
+  
   font-size: 0.9em;
 }
 
 @media screen and (max-width:768px){
   label {
-    font-weight: bold;
+    
     font-size: 3.55vw;
     margin-bottom: 0.5em;
   }
@@ -3148,14 +3119,14 @@ label {
 
 .contact h2 {
   font-size: 3.1em;
-  font-weight: bold;
+  
   text-align: center;
 }
 
 @media screen and (max-width:768px){
   .contact h2 {
     font-size: 8.2vw;
-    font-weight: bold;
+    
     text-align: center;
     padding-top: 28%;
     margin-top: 25%;
@@ -3164,14 +3135,14 @@ label {
 
 .contact h3 {
   text-align: center;
-  font-weight: bold;
+  
   font-size: 1.2em;
 }
 
 @media screen and (max-width:768px){
   .contact h3 {
     text-align: center;
-    font-weight: bold;
+    
     font-size: 3.5vw;
   }
 }
@@ -3210,7 +3181,7 @@ label {
   color: #1f1e1e;
   background-color: #fff;
   padding: 0.5% 4%;
-  font-weight: bold;
+  
   text-align: center;
 }
 
@@ -3222,7 +3193,7 @@ label {
     padding: 0.5% 3%;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-weight: bold;
+    
     text-align: center;
   }
   
@@ -3232,7 +3203,7 @@ label {
 }
 
 .contact a {
-  font-weight: bold;
+  
 }
 
 .contact-form {
@@ -3302,7 +3273,7 @@ form {
 .submit-btn {
   padding: 1.55% 25.8%;
   align-items: center;
-  font-weight: bold;
+  
   font-size: 1.5em;
 }
 
@@ -3311,7 +3282,7 @@ form {
   .submit-btn {
     padding: 2% 42%;
     align-items: center;
-    font-weight: bold;
+    
     font-size: 1em;
   }
 }
@@ -3345,7 +3316,7 @@ nav
   writing-mode: vertical-rl;
   text-orientation: mixed;
   line-height: 5vw;
-  font-weight: bold;
+  
   font-size: 0.6em;
 }
 
@@ -3396,7 +3367,7 @@ footer
 */
 
 .footer {
-  font-weight: bold;
+  
   color: #1f1e1e;
 }
 
@@ -3505,11 +3476,7 @@ footer
     padding-bottom: 2%;
     padding-top: 3%;
     justify-content: space-between;
-<<<<<<< HEAD
     width: 100vw;
-=======
-    width: 100%;
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
   }
 
   .ft-sp-img{
@@ -3548,8 +3515,10 @@ footer
 
   .ft-sp-txt{
     background-color: #1f1e1e;
-    color: #f5f5f5;
     border-radius: 10px;
+  }
+  .ft-sp-txt a{
+    color: #f5f5f5;
   }
   .pc{
     display: none;
@@ -3559,26 +3528,15 @@ footer
   }
  }
 
-<<<<<<< HEAD
-/* 
-.contact-banner {
-  
-=======
 
 .contact-banner {
   /* バナーのスタイル */
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
 }
 
 .contact-banner-text h2,
 .contact-banner-text p {
-<<<<<<< HEAD
-  
-} */
-=======
   /* テキストスタイル */
 }
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
 
 .contact-buttons {
   /* ボタンのラップスタイル */
@@ -3601,7 +3559,7 @@ footer
   /* 体験予約ボタンの特別なスタイル */
   position: relative;
   width: 30vw;
-  font-weight: bold;
+  
 }
 
 .button-line {
@@ -3609,7 +3567,7 @@ footer
   width: 30vw;
   background-color: #fff;
   color: #000;
-  font-weight: bold;
+  
   position: relative;
 }
 
@@ -3630,10 +3588,6 @@ footer
   transform: rotate(-90deg);
   top: 35%;
   right: 2rem;
-}
-.price-hidden{
-  visibility: hidden;
-<<<<<<< HEAD
 }
 
 /* contact追加 */
@@ -3689,11 +3643,33 @@ label {
 .send{
   width: 50%;
   margin: 3rem auto;
+  position: relative;
+  font-size: 1.5rem;
 }
 .send input{
-  height: 3rem;
+  height: 4rem;
   background: #fff;
   color: #000;
+}
+.send::after {
+  content: "";
+  position: absolute;
+  right: 3rem;
+  border: 6px solid transparent;
+  border-top: 7px solid #111;
+  transform: rotate(-90deg);
+}
+@media screen and (max-width:765px) {
+  .send{
+    font-size: 1.2rem;
+  }
+
+  .send input{
+    height: 3rem;
+  }
+  .send::after{
+    right: 1rem;
+  }
 }
 
 /* ベースのラジオボタンを隠す */
@@ -3754,16 +3730,4 @@ label {
   .date{
     width: 100%;
   }
-}
-
-.concept_1{
-  margin-left: 20px;
-}
-.concept_2{
-  margin-left: 20px;
-}
-.concept_3{
-  margin-left: 20px;
-=======
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
 }

@@ -11,12 +11,20 @@
     <!-- 共通項目 -->
     <meta name="keywords" content="ユナイツ,UNITES,大阪府,大阪,江坂,プライベートジム,パーソナルジム,パーソナルトレーニング" />
     <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic&display=swap" rel="stylesheet">
+    <style>
+     @font-face {
+      src: url("../fonts/Zen_Kaku_Gothic_New/ZenKakuGothicNew-Bold.ttf") format("ttf");
+      font-family: "Zen Kaku Gothic New", sans-serif;
+      font-weight: 900;
+     } 
+     @font-face {
+      src: url("../fonts/Jost/Jost-VariableFont_wght.ttf") format("ttf");
+      font-family: "Jost", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+     } 
+    </style>
   </head>
   <body>
     <header class="header">
@@ -70,7 +78,7 @@
         </section>
 
         <!--コンセプト-->
-        <section class="concept">
+        <section class="concept" id="concept">
           <div class="concept-wrap">
             <h2>
               <span>パーソナルジムをもっと身近な存在へ</span>
@@ -160,7 +168,7 @@
 
           <div class="contact-btn">
             <div class="btn1-wrap">
-                <a href="#" class="botun-1"><span class="btn-1-span">体験予約はこちら</span></a>
+                <a href="https://lin.ee/QfnngQm" class="botun-1"><span class="btn-1-span">体験予約はこちら</span></a>
             </div>            
           </div>
         </section>
@@ -179,12 +187,12 @@
         <section class="facility">
           <h2>施設案内</h2>
           <div class="facility-img">
-            <img src="./images/施設案内1.JPG" alt="" />
+            <img src="./images/館内案内受付.jpg" alt="" />
             <img src="./images/施設案内2.JPG" alt="" />
             <img src="./images/施設案内3.JPG" alt="" />
             <img class="fac-img-4" src="./images/施設案内4.JPG" alt="" />
-            <img class="fac-img-5" src="./images/施設案内5.JPG" alt="" />
-            <img class="fac-img-6" src="./images/施設案内6.JPG" alt="" />
+            <img class="fac-img-5" src="./images/お水・レンタル無料.JPG" alt="" />
+            <img class="fac-img-6" src="./images/館内案内更衣室.jpg" alt="" />
           </div>
         </section>
 
@@ -280,53 +288,53 @@
           </div>
         </section>
 
-        <!--strength-->
+                <!--strength-->
 
-        <section class="our-strength">
-          <div class="strength-title">
-            <h2>OUR STRENGTH</h2>
-            <p>私たちの強み</p>
-          </div>
-
-          <div class="strength-wrapper">
-            <div class="st_wrap_cnt">
-              <div class="st-img-wrap">
-                <img src="./images/初回カウンセリング.JPG" />
-                <p class="img_override-1 gr_2">初回カウンセリング</p>
-              </div>
-              
-              <div class="st-txt">
-                <ul>
-                  <li>
-                    お客様の悩みや目標をお伺いし、あなたに合った最適なプランを一緒に考えます! 
-                  </li>
-                  <li>
-                    ライフスタイルに合わせた無理のない継続できる方法で、目標達成できるプランをご案内いたします！
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="st_wrap_cnt">
-              <div class="st-img-wrap">
-                <img src="./images/体組成分析2.JPG" />
-                <p class="img_override-1 gr_2">体組成分析</p>
-              </div>
-              
-              <div class="st-txt">
-                <p>
-                  ご来店いただくたびに、体組成分析を測定することができます。Inbodyとは医療
-                  現場やエステなどでも活用されている体組成分析です。InBodyはご自宅の体重計では測定できない<span>正確な、筋肉量、体脂肪量、体脂肪率、に加え、体水分、タンパク質、ミネラルなどの詳細なデータの測定が可能</span
-                  >ですので、結果に基づいたあなただけに合わせたトレー
-                  ニングや食事指導をご提案させていただきます！
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+                <section class="our-strength">
+                  <div class="strength-title">
+                    <h2>OUR STRENGTH</h2>
+                    <p>私たちの強み</p>
+                  </div>
+        
+                  <div class="strength-wrapper">
+                    <div class="st_wrap_cnt">
+                      <div class="st-img-wrap">
+                        <img src="./images/初回カウンセリング.JPG" />
+                        <p class="img_override-1 gr_2">初回カウンセリング</p>
+                      </div>
+                     
+                      <div class="st-txt">
+                        <ul>
+                          <li>
+                            お客様の悩みや目標をお伺いし、あなたに合った最適なプランを一緒に考えます! 
+                          </li>
+                          <li>
+                            ライフスタイルに合わせた無理のない継続できる方法で、目標達成できるプランをご案内いたします！
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+        
+                    <div class="st_wrap_cnt">
+                      <div class="st-img-wrap">
+                        <img src="./images/体組成分析2.JPG" />
+                        <p class="img_override-1 gr_2">体組成分析</p>
+                      </div>
+                      
+                      <div class="st-txt">
+                        <p>
+                          ご来店いただくたびに、体組成分析を測定することができます。Inbodyとは医療
+                          現場やエステなどでも活用されている体組成分析です。InBodyはご自宅の体重計では測定できない<span>正確な、筋肉量、体脂肪量、体脂肪率、に加え、体水分、タンパク質、ミネラルなどの詳細なデータの測定が可能</span
+                          >ですので、結果に基づいたあなただけに合わせたトレー
+                          ニングや食事指導をご提案させていただきます！
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
 
         <!--サービス内容-->
-        <section class="service">
+        <section class="service" id="service">
           <div class="service-title">
             <h2>OUR SERVICE</h2>
             <p class="service-title-p">サービス内容</p>
@@ -396,7 +404,7 @@
 
 
         <!--price list-->
-        <section class="price-list">
+        <section class="price-list" id="price">
           <div class="price-title">
             <h2>PRICE LIST</h2>
             <p>料金表</p>
@@ -415,31 +423,24 @@
               </div>
               <dl class="pr-li-1">
                 <dt>1回</dt>
-                <dd>3,850円<span class="price-hidden"> １回あたり7,000円</span></dd>
+                <dd>3,850円</dd>
+                <dd class="price-column"></dd>
                 <dt>8回</dt>
-                <dd>28,000円
-                  <span>
-                    １回あたり3,500円
-                  </span>
-                </dd>
+                <dd>28,000円</dd>  
+                  <dd class="price-column"> １回あたり3,500円
+                  </dd>
                 <dt>16回+1</dt>
-                <dd>56,000円
-                  <span>
-                    １回あたり3,294円
-                  </span>
-                </dd>
+                <dd>56,000円</dd>               
+                  <dd class="price-column"> １回あたり3,294円
+                  </dd>
                 <dt>24回+2</dt>
-                <dd>84,000円
-                  <span>
-                    １回あたり3,230円
-                  </span>
-                </dd>
+                <dd>84,000円</dd>               
+                  <dd class="price-column"> １回あたり3,230円
+                  </dd>
                 <dt>32回+4</dt>
-                <dd>112,000円
-                  <span>
-                    １回あたり3,111円
-                  </span>
-                </dd>
+                <dd>112,000円</dd>               
+                  <dd class="price-column"> １回あたり3,111円
+                  </dd>
               </dl>
             </div>
 
@@ -455,29 +456,24 @@
               </div>
               <dl class="pr-line pr-li-1">
                 <dt>1回</dt>
-                <dd>7,700円<span class="price-hidden"> １回あたり7,000円</span></dd>
+                <dd>7,700円</dd>
+                <dd class="price-column"></dd>
                 <dt>8回</dt>
-                <dd>56,000円 
-                <span>
-                  １回あたり7,000円
-                </span></dd>
+                <dd>56,000円</dd>
+                <dd class="price-column"> １回あたり7,000円
+                </dd>
                 <dt>16回+1</dt>
-                <dd>112,000円
-                  <span>
-                    １回あたり6,588円
-                  </span></dd>
+                <dd>112,000円</dd>               
+                  <dd class="price-column"> １回あたり6,588円
+                  </dd>
                 <dt>24回+2</dt>
-                <dd>168,000円
-                  <span>
-                    １回あたり6,461円
-                  </span>
-                </dd>
+                <dd>168,000円</dd>               
+                  <dd class="price-column"> １回あたり6,461円
+                  </dd>
                 <dt>32回+4</dt>
-                <dd>224,000円
-                  <span>
-                    １回あたり6,222円
-                  </span>
-                </dd>
+                <dd>224,000円</dd>               
+                  <dd class="price-column"> １回あたり6,222円
+                  </dd>
               </dl>
             </div>
 
@@ -658,7 +654,7 @@
                 <dt>営業時間</dt>
                 <dd>8時〜22時</dd>
                 <dt>電話番号</dt>
-                <dd>000-0000-0000</dd>
+                <dd>070-9175-0482</dd>
               </dl>
               <p>※公式LINEからのお電話も可能です。</p>
             </div>
@@ -681,14 +677,23 @@
                 $message = htmlspecialchars($_POST['message'], ENT_QUOTES, 'UTF-8');
                 $to = 'info@personalgym-unites.com';
                 $subject = 'Website Contact Form';
-                $body = "Name: $name\nEmail: $email\nTel: $tel\nGender: $sex\nDate: $date\nTime Preference: $time_preference\nMessage: $message";
-                $headers = "From: webmaster@trickdart.com\r\n" .
+                $body = "ホームページから問い合わせが届きました。確認して対応してください。:\n\n" .
+                        "---------------------------------\n" .
+                        "Name: $name\n" .
+                        "Email: $email\n" .
+                        "Telephone: $tel\n" .
+                        "Gender: $sex\n" .
+                        "Preferred Date for Appointment: $date\n" .
+                        "Preferred Time of Day: $time_preference\n" .
+                        "Message: \n$message\n" .
+                        "---------------------------------\n";
+                $headers = "From: info@personalgym-unites.com\r\n" .
                           "Reply-To: $email\r\n" .
                           "MIME-Version: 1.0\r\n" .
                           "Content-Type: text/plain; charset=UTF-8";
 
                 if (mail($to, $subject, $body, $headers)) {
-                    echo "<p>お問い合わせありがとうございます。近日中にご返信致しますので、しばらくお待ちください。</p>";
+                    echo "<p>お問い合わせありがとうございます。<br>近日中にご返信致しますので、しばらくお待ちください。</p>";
                 } else {
                     echo "<p>メールの送信に失敗しました。再送するか公式LINEからお問い合わせください。</p>";
                 }
@@ -779,7 +784,7 @@
               <li><a href="https://lin.ee/QfnngQm"><img class="line-logo" src="./images/line.svg" /></a></li>
             </ul>
             <div class="nav-box">
-              <a href="#">体験予約はこちら</a>
+              <a href="https://lin.ee/QfnngQm">体験予約はこちら</a>
             </div>
           </nav>
          
@@ -796,10 +801,10 @@
         </div>
         <div class="footer-right">
           <ul class="footer-list">
-            <li><a>TOP</a></li>
-            <li><a>コンセプト</a></li>
-            <li><a>サービス内容</a></li>
-            <li><a>料金一覧</a></li>
+            <li><a href="#">TOP</a></li>
+            <li><a href="#concept">コンセプト</a></li>
+            <li><a href="#service">サービス内容</a></li>
+            <li><a href="#price">料金一覧</a></li>
           </ul>
         </div>
       </div>
@@ -814,11 +819,13 @@
           <ul>
             <li>
               <div class="ft-sp-txt">
-                <p>体験予約はこちら</p>
+                <a href="https://lin.ee/QfnngQm">体験予約はこちら</a>
               </div>
             </li>
             <li>
-              <img class="ft-sp-img" src="./images/line.svg">
+              <a href="https://lin.ee/QfnngQm">
+                <img class="ft-sp-img" src="./images/line.svg">
+              </a>
             </li>
           </ul>
         </div>

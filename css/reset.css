@@ -40,10 +40,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-<<<<<<< HEAD
   max-width: 100vw;
-=======
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
 }
 a{
   color: #000;
@@ -70,13 +67,8 @@ select {
   font: inherit;
 }
 
-<<<<<<< HEAD
-body{
-  font-family: yu-gothic-pr6n, sans-serif;
-}
 
-=======
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
+
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -94,10 +86,7 @@ body{
 ul{
   margin: 0;
   padding: 0;
-<<<<<<< HEAD
 }
 ul,li{
   list-style: none;
-=======
->>>>>>> 17eb68be2e706d4959ddb257de5a8df9a1a8ffdb
 }
